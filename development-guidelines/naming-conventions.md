@@ -299,12 +299,12 @@ All added from controls should have <b>_PRJ</b> postfix.
 ### Extending the form controls
 To name a handler class that implements the extension of the form controls, use the following principle:
 
-Classes\<FormFullName>Form_<ControlFullName>Ctrl<b>_PRJ_Extension</b>
+Classes\\<FormFullName>Form_<ControlFullName>Ctrl<b>_PRJ_Extension</b>
 
 Examples:
 
 ```
-Classes\LedgerJournalTransDailyForm_AccountAgreementId_RUCrrl_PRJ_Extension
+Classes\LedgerJournalTransDailyForm_AccountAgreementId_RUCtrl_PRJ_Extension
 Classes\LedgerJournalTransDailyForm_CFDIFinancialSystem_MXCtrl_PRJ_Extension
 ```
 
