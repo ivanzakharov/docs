@@ -8,11 +8,4 @@ jobs:
       - run: git config --global user.email "circleci@zakharov.com"
       - run: git config --global user.name "Circle CI"
       - run: mkdir build
-      - run: cd /home/circleci/project/build
-      - run: git init
-      - run: git remote add origin https://github.com/ivanzakharov/docs
-      - run: git pull origin build
-      - run: date "+%d/%m/%y %H:%M" >> .circleci/update.log
-      - run: git add .
-      - run: git commit -m 'Docs update'
-      - run: git push origin build
+      - run: cd /home/circleci/project/build && git init && git remote add origin https://github.com/ivanzakharov/ivanzakharov.github.io && git pull origin build && date "+%d/%m/%y %H:%M" >> .circleci/update.log && git add . && git commit -m 'Docs update' && git push origin build
