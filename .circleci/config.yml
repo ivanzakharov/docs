@@ -7,7 +7,7 @@ jobs:
       - checkout # check out the code in the project directory
       - run: git config --global user.email "circleci@zakharov.com"
       - run: git config --global user.name "Circle CI"
-      - run: mkdir build --cd
+      - run: mkdir build && cd $_
       - run: git init
       - run: git remote add origin https://github.com/ivanzakharov/docs
       - run: git pull origin build
