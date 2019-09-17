@@ -1,1 +1,1 @@
-# docs
+# Development Guidelines for Dynamics 365 for Finance and Operations
