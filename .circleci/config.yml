@@ -7,4 +7,10 @@ jobs:
       - checkout # check out the code in the project directory
       - run: git config --global user.email "circleci@zakharov.com"
       - run: git config --global user.name "Circle CI"
-      - run: mkdir build && cd build && git init && git remote add origin git@github.com:ivanzakharov/ivanzakharov.github.io.git && git pull origin build && date "+%d/%m/%y %H:%M" >> .circleci/update.log && git add . && git commit -m 'Docs update' && git push origin build
+      - run: rm -rf * && rm -rf *.*
+      - run: git init
+      - run: git remote add origin git@github.com:ivanzakharov/ivanzakharov.github.io.git
+      - run: git pull origin build
+      - run: date "+%d/%m/%y %H:%M" >> .circleci/update.log
+      - run: git add . && git commit -m 'Docs update'
+      - run: git push origin build
