@@ -12,8 +12,8 @@ toc: true
 
 # Naming essentials
 
-- All customizations should consist project suffix (hereinafter referred as <b>_PRJ</b>). In Chanel we use <b>_CNL</b> postfix.  
-- All customizations should be implemented in the single unified model (hereinafter referred as <i><b>Project</b> model</i>). In Chanel we use only one unified model <b>Chanel</b>.
+- All customizations should consist project suffix (hereinafter referred as <b>_PRJ</b>).   
+- All customizations should be implemented in the single unified model (hereinafter referred as <i><b>Project</b> model</i>).
 - Present naming conventions guarantee to have only one extension for the object.
 
 ## New objects
