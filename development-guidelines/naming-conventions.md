@@ -477,11 +477,16 @@ VG00021_ImportPurchLineFromExcel_RDO
 # Benefits
 - Objects are well-organized with natual naming
 - No more parm methods doubts:
-a) implement as parmprjInventTable()
-b) implement as parmPRJInventTable()
-c) implement as prjParmInventTable()
-d) implement as prjparmInventTable()
-Answer: implement as parmInventTable_PRJ()
+a) implement as parmprjInventTable()<br/>
+b) implement as parmPRJInventTable()<br/>
+c) implement as prjParmInventTable()<br/>
+d) implement as prjparmInventTable()<br/>
+Answer: implement as parmInventTable_PRJ()<br/>
+- variables could start with natural language, ending with postfix:<br/>
+```
+PurchTable_PRJ purchTable_PRJ = PurchTable::find(purchId).purchTable_PRJ();
+VendTableClassId_PRJ vendTableClassId_PRJ = purchTable_PRJ.vendTableClassId_PRJ();
+```
 
 Same logic implements with set/get methods
  
