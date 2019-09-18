@@ -5,8 +5,8 @@ jobs:
       - image: circleci/node:4.8.2 # the primary container, where your job's commands are run
     steps:
       - checkout # check out the code in the project directory
-      - run: git config --global user.email "circleci@zakharov.com"
-      - run: git config --global user.name "Circle CI"
+      - run: git config --global user.email "ivan@zakharov.com"
+      - run: git config --global user.name "ivanzakharov"
       - run: rm -rf .git
       - run: rm -rf *
       - run: git init
