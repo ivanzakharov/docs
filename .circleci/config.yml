@@ -8,6 +8,7 @@ jobs:
       - run: git config --global user.email "ivan@zakharov.com"
       - run: git config --global user.name "ivanzakharov"
       - run: rm -rf .git
+      - run: rm -rf .circleci
       - run: rm -rf *
       - run: git init
       - run: git remote add origin git@github.com:ivanzakharov/ivanzakharov.github.io.git
