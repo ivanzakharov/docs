@@ -5,6 +5,9 @@ jobs:
       - image: circleci/node:4.8.2 # the primary container, where your job's commands are run
     steps:
       #- checkout # check out the code in the project directory
+      - add_ssh_keys:
+          fingerprints:
+            - "16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48"
       - run: git config --global user.email "ivan@zakharov.com"
       - run: git config --global user.name "ivanzakharov"
       - run: rm -rf .git
