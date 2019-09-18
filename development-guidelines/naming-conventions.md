@@ -21,7 +21,7 @@ toc: true
 New objects with following types are created with <b>_PRJ</b> postfix:
 - Base Enums
 - Extended Data Types
-- Tables
+- [Tables](#tables)
 - Views
 - Queries
 - [Data Entities](#data-entities)
