@@ -472,4 +472,16 @@ CNL00153_PurchWorkflowParticipants_IZA
 CNL02001_SalesInvoicePrintToExcel_SAO
 VG00021_ImportPurchLineFromExcel_RDO
 ```
+
+
+# Benefits
+- Objects are well-organized with natual naming
+- No more parm methods doubts:
+a) implement as parmprjInventTable()
+b) implement as parmPRJInventTable()
+c) implement as prjParmInventTable()
+d) implement as prjparmInventTable()
+Answer: implement as parmInventTable_PRJ()
+
+Same logic implements with set/get methods
  
