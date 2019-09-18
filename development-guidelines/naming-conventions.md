@@ -487,6 +487,10 @@ Answer: implement as parmInventTable_PRJ()<br/>
 PurchTable_PRJ purchTable_PRJ = PurchTable::find(purchId).purchTable_PRJ();
 VendTableClassId_PRJ vendTableClassId_PRJ = purchTable_PRJ.vendTableClassId_PRJ();
 ```
+- Datasource are always started with Capital:
+Forms\PurchTable\Datasources\PurchTable_PRJ
+and not:
+Forms\PurchTable\Datasoures\prjPurchTable
 
 Same logic implements with set/get methods
  
