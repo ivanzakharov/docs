@@ -49,7 +49,7 @@ New objects with following types are created with <b>_PRJ</b> postfix:
 
 Examples:
 
-{% highlight cpp %} 
+```
 BaseEnums\BankClientStreamType_PRJ
 BaseEnums\DayNight_PRJ
 BaseEnums\GanttBorderType_PRJ
@@ -63,7 +63,7 @@ Views\WorkflowCommentList_PRJ
 Views\PurchTableLastReqView_PRJ
 Queries\ActivityListOpen_PRJ
 Queries\AssetRecordList_PRJ
-{% endhighlight %}
+```
 
 ## Extended objects
 
