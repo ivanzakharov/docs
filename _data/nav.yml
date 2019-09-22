@@ -1,0 +1,12 @@
+- title: What's new?
+- title: Business processes
+- title: Application documentation
+- title: Application Design
+  pages:
+    - title: Development guidelines
+      pages: 
+        - title: Naming conventions
+        - title: Code execution sequence using Chain-of-Commands and EventHandlers
+
+    - title: Architectural regulations
+    - title: UI design guidelines

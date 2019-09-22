@@ -2,13 +2,14 @@
 layout: docs
 title: Code execution sequence using Chain-of-Commands and EventHandlers
 description:
-group: development-guidelines
+group: application-design
+subgroup: development-guidelines
 toc: true
 ---
 
 Take into account code execution sequence (1,2,3,4) for the following code:
 
-```
+{% highlight cpp %}
 [ExtensionOf(tableStr(ProjTable))]
 final class ProjTable_PRJ_Extension 
 {
@@ -37,4 +38,4 @@ final class ProjTable_PRJ_Extension
         // do something ..
     }
 }
-```
+{% endhighlight %}

@@ -2,18 +2,19 @@
 layout: docs
 title: Naming conventions
 description: Following naming conventions for application objects contain naming rules which are mandatory for developer.
-group: development-guidelines
+group: application-design
+subgroup: development-guidelines
 redirect_from:
-  - "/"
-  - "/development-guidelines/"
-  - "/naming-conventions/"
+  - "/application-design/"
+  - "/application-design/development-guidelines/"
+  - "/application-design/naming-conventions/"
 toc: true
 ---
 
 # Naming essentials
 
-- All customizations should consist project suffix (hereinafter referred as <b>_PRJ</b>).   
-- All customizations should be implemented in the single unified model (hereinafter referred as <i><b>Project</b> model</i>).
+- All customizations should consist project suffix (hereinafter referred as <b>_PRJ</b>). In Chanel we use <b>_CNL</b> postfix.  
+- All customizations should be implemented in the single unified model (hereinafter referred as <i><b>Project</b> model</i>). In Chanel we use only one unified model <b>Chanel</b>.
 - Present naming conventions guarantee to have only one extension for the object.
 
 ## New objects
@@ -21,7 +22,7 @@ toc: true
 New objects with following types are created with <b>_PRJ</b> postfix:
 - Base Enums
 - Extended Data Types
-- [Tables](#tables)
+- Tables
 - Views
 - Queries
 - [Data Entities](#data-entities)
@@ -49,7 +50,8 @@ New objects with following types are created with <b>_PRJ</b> postfix:
 
 Examples:
 
-```
+
+{% highlight cpp %}
 BaseEnums\BankClientStreamType_PRJ
 BaseEnums\DayNight_PRJ
 BaseEnums\GanttBorderType_PRJ
@@ -63,7 +65,7 @@ Views\WorkflowCommentList_PRJ
 Views\PurchTableLastReqView_PRJ
 Queries\ActivityListOpen_PRJ
 Queries\AssetRecordList_PRJ
-```
+{% endhighlight %}
 
 ## Extended objects
 
@@ -82,7 +84,7 @@ Following extensions are created with <b>.Extension_PRJ</b> postfix:
 
 Examples:
 
-```
+{% highlight cpp %}
 BaseEnumExtensions\CaseCategoryGroupType.Extension_PRJ
 BaseEnumExtensions\NumberSeqModule.Extension_PRJ
 ExtendedDataTypesExtensions\CalendarId.Extension_PRJ
@@ -94,7 +96,7 @@ ViewsExtensions\NumberSeqModule.Extension_PRJ
 QueryExtensions\smmActivities.Extension_PRJ
 FormExtensions\RetailStoreTable.Extension_PRJ
 FormExtensions\SalesAgreement.Extension_PRJ
-```
+{% endhighlight %}
 
 
 
@@ -106,11 +108,11 @@ Fields on new tables are created without postfix.
 
 Examples:
 
-```
+{% highlight cpp %}
 TableExtensions\CategoryTable.Extension_PRJ\FIelds\CategoryGroupId_PRJ
 TableExtensions\InventTable.Extension_PRJ\FIelds\ItemConsumerGroup_PRJ
 Tables\ItemCategoryList_PRJ\Fields\ItemCategoryListId
-```
+{% endhighlight %}
 
 ## Methods 
 Methods on the new tables are created without postfix.<br/>
@@ -118,18 +120,18 @@ Methods on existing table are created with help of class extensions and without 
 
 Examples:
 
-````
+{% highlight cpp %}
 Tables\ItemCategoryList_PRJ\Methods\initItemCategoryListId()
 Tables\EcoResProductDivision_PRJ\Methods\find()
-````
+{% endhighlight %}
 
 Methods executing on existing table:
-````
+{% highlight cpp %}
 ...
 ecoResCategory.setCategoryGroupId_PRJ();
 inventTable\validateItemConsumerGroup_PRJ();
 ...
-````
+{% endhighlight %}
 
 ## Extending tables 
 
@@ -149,14 +151,15 @@ See also [Code execution sequence using Chain-of-Commands and EventHandlers](/de
 
 Examples:
 
-```
+
+{% highlight cpp %}
 Classes\SMAServiceOrderTable_PRJ_Extension
 Classes\PurchTable_RU_PRJ_Extension
-```
+{% endhighlight %}
 Для создания класса-обработчика используется атрибут _ExtensionOf_: 
-```
+{% highlight cpp %}
 [ExtensionOf(tableStr(PurchParmTable))] 
-```
+{% endhighlight %}
 
 # Data Entities
 
@@ -178,21 +181,21 @@ Extension of classes are named by adding the <b>_PRJ</b> and <b>_Extension</b> p
 
 Examples:
 
-```
+{% highlight cpp %}
 Classes\SalesFormLetter_PRJ_Extension
 Classes\PurchReqWFExpendiParticipantProvider_PRJ_Extension
-```
-```
+{% endhighlight %}
+{% highlight cpp %}
 [ExtensionOf(classtr(PurchReqWFExpendiParticipantProvider))]
 class PurchReqWFExpendiParticipantProvider_PRJ_Extension
 {
 	. . .
 }
-```
+{% endhighlight %}
 
 For implementing event handlers we should use <b>EventHandler_PRJ</b> postfix, accompanying table name:
 
-```
+{% highlight cpp %}
 class EcoResAttributeValueEventHandler_PRJ
 {
     [DataEventHandler(tableStr(EcoResAttributeValue), DataEventType::Inserting)]
@@ -203,11 +206,11 @@ class EcoResAttributeValueEventHandler_PRJ
         ecoResAttributeValue.defaultCategoryGroupId_PRJ();
     }
 }
-```
+{% endhighlight %}
 
 For implementing event handlers on the forms, please use <b>FormEventHandler_PRJ</b> postfix, accompanying with form name:
 
-```
+{% highlight cpp %}
 class EcoResAttributeValueFormEventHandler_PRJ
 {
     [FormEventHandler(formStr(EcoResAttributeValue), FormEventType::Closing)]
@@ -217,7 +220,7 @@ class EcoResAttributeValueFormEventHandler_PRJ
         EcoResProductAttributeValue ecoResAttributeValue = ecoResProduct_ds.cursor();
     }
 }
-```
+{% endhighlight %}
 
 _Important Notes:<br/>
 After implementing of new _Pre_-/_Post_- event handler, you should rebuild your model (during this build the XML files with the list of handlers will be updated in the Bin folder of the model)._
@@ -231,15 +234,15 @@ Classes\<FormFullName><b>Form_PRJ_Extension</b>
 
 Examples:
 
-```
+{% highlight cpp %}
 Forms\PurchTable - Classes\PurchTableForm_PRJ_Extension
 Forms\LedgerJournalTransDaily – Classes\LedgerJournalTransDailyForm_PRJ_Extension
-```
+{% endhighlight %}
 
 For creation of class-extension following attribute is used:
-```
+{% highlight cpp %}
 [ExtensionOf(formStr (PurchEditLines))]
-```
+{% endhighlight %}
 
 ## Datasources
 
@@ -248,48 +251,48 @@ For creation of class-extension following attribute is used:
 Datasources name must match the name of the table used. 
 In form extensions - with the <b>_PRJ</b> postfix. 
 
-```
+{% highlight cpp %}
 Tables\PurchTable_PRJ (new table)
 Forms\PurchTable.Extension_PRJ (form extension)
 Forms\PurchTable.Extension_PRJ\Datasources\VendTable_PRJ (new datasource on form extension)
 Forms\VendInvoiceJour.Extension_PRJ\Datasources\PurchTable_PRJ (table PurchTable)
 Forms\VendInvoiceJour.Extension_PRJ\Datasources\PurchTable_PRJ_PRJ (table PurchTable_PRJ)
-```
+{% endhighlight %}
 
 ### Extending the form datasources
 To name a handler class that implements the extension of methods of an existing form datasource, use the following principle:
 
-Classes\<FormFullName>Form_<DatasourceFullName><b>DS_PRJ_Extension</b>
+```Classes\<FormFullName>Form_<DatasourceFullName><b>DS_PRJ_Extension</b>```
 
 Examples:
 
-```
+{% highlight cpp %}
 Classes\PurchTableForm_PurchTableDS_PRJ_Extension
 Classes\LedgerJournalTransDailyForm_LedgerJournalTransDS_PRJ_Extension
 Classes\LedgerJournalTransDailyForm_LedgerJournalTrans_WDS_PRJ_Extension
-```
+{% endhighlight %}
 
 For creation of class-extension following attribute is used:
-```
+{% highlight cpp %}
 [ExtensionOf(formDataSourceStr(PurchEditLines, PurchParmUpdate))]
-```
+{% endhighlight %}
 
 ### Extending the fields of form datasources
 To name a handler class that implements the extension of the fields methods of an existing form datasource, use the following principle:
 
-Classes\<FormFullName>Form_<DatasourceFullName>DS_<FullDatasourceFieldName>Field_PRJ_Extension.
+```Classes\<FormFullName>Form_<DatasourceFullName>DS_<FullDatasourceFieldName>Field_PRJ_Extension.```
 
 Examples:
 
-```
+{% highlight cpp %}
 Classes\LedgerJournalTransDailyForm_LedgerJournalTransDS_AccountAgreementId_RUField_PRJ_Extension
 Classes\LedgerJournalTransDailyForm_LedgerJournalTrans_WDS_CFDIFinancialSystem_MXField_PRJ_Extension
-```
+{% endhighlight %}
 
 For creation of class-extension following attribute is used:
-``` 
+{% highlight cpp %} 
 [ExtensionOf(formDataFieldStr(PurchEditLines, PurchParmUpdate,CheckCreditMax))]
-```
+{% endhighlight %}
 
 ## Form controls
 
@@ -299,19 +302,19 @@ All added from controls should have <b>_PRJ</b> postfix.
 ### Extending the form controls
 To name a handler class that implements the extension of the form controls, use the following principle:
 
-Classes\\<FormFullName>Form_<ControlFullName>Ctrl<b>_PRJ_Extension</b>
+```Classes\\<FormFullName>Form_<ControlFullName>Ctrl<b>_PRJ_Extension</b>```
 
 Examples:
 
-```
+{% highlight cpp %}
 Classes\LedgerJournalTransDailyForm_AccountAgreementId_RUCtrl_PRJ_Extension
 Classes\LedgerJournalTransDailyForm_CFDIFinancialSystem_MXCtrl_PRJ_Extension
-```
+{% endhighlight %}
 
 For creation of class-extension following attribute is used:
-```
+{% highlight cpp %}
 [ExtensionOf(formControlStr(PurchEditLines, CheckCreditMax))]
-```
+{% endhighlight %}
 
 _Notes:
 Since the class name is limited to 80 characters, you can shorten the name of the field or data source (but not the form!)._
@@ -320,7 +323,7 @@ Since the class name is limited to 80 characters, you can shorten the name of th
 ## Alternate way to extending the forms 
 For extending the forms, you may implement override-methods for form controls/datasources/fields.<br>
 Benefits of this approach - to have single form extension class for all form customization:
-```
+{% highlight cpp %}
 [ExtensionOf(formStr(EcoResProductCreate))]
 final class EcoResProductCreateForm_CNL_Extension 
 {
@@ -435,7 +438,7 @@ final class EcoResProductCreateForm_CNL_Extension
     }
 
 }
-```
+{% endhighlight %}
 
 
 # Jobs (Runnable class)
@@ -446,12 +449,12 @@ _BBBBBBBBB_ - short title for Job in [UpperCamelCase](https://techterms.com/defi
 
 Examples:
 
-```
+{% highlight cpp %}
 PRJ00153_PurchWorkflowParticipantsUpdate
 PRJ00087_SalesAgreementUpdate_Customers
 PRJ00087_SalesAgreementUpdate_Agreements
 PRJ00087_SalesAgreementUpdate_SalesOrders
-````
+{% endhighlight %}
 
 # Development projects
 Every single feature/functionality should be developed using Visual Studio and each development task should be linked with related task in Azure DevOps with further delivery to production.
@@ -467,30 +470,9 @@ _UUU_ – developer’s nickname\alias in UPPERCASE
 
 Examples:
 
-```
+{% highlight cpp %}
 CNL00153_PurchWorkflowParticipants_IZA
 CNL02001_SalesInvoicePrintToExcel_SAO
 VG00021_ImportPurchLineFromExcel_RDO
-```
-
-
-# Benefits
-- Objects are well-organized with natual naming
-- No more parm methods doubts:
-a) implement as parmprjInventTable()<br/>
-b) implement as parmPRJInventTable()<br/>
-c) implement as prjParmInventTable()<br/>
-d) implement as prjparmInventTable()<br/>
-Answer: implement as parmInventTable_PRJ()<br/>
-- variables could start with natural language, ending with postfix:<br/>
-```
-PurchTable_PRJ purchTable_PRJ = PurchTable::find(purchId).purchTable_PRJ();
-VendTableClassId_PRJ vendTableClassId_PRJ = purchTable_PRJ.vendTableClassId_PRJ();
-```
-- Datasource are always started with Capital:
-Forms\PurchTable\Datasources\PurchTable_PRJ
-and not:
-Forms\PurchTable\Datasoures\prjPurchTable
-
-Same logic implements with set/get methods
+{% endhighlight %}
  
