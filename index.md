@@ -18,12 +18,7 @@ toc: true
       <div class="entry">
         {{ post.excerpt }}
       </div>
-      <div class="d-flex justify-content-between">
-	      <div class="post-meta">
-	      	{{ post.date | date: '%B %d, %Y' }}
-	      </div>
-	      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-	  </div>
+	    <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
   {% endfor %}
 </div>
