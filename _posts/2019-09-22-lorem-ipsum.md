@@ -1,5 +1,5 @@
 ---
-layout: simple
+layout: docs
 title: Lorem ipsum
 description:
 toc: true
