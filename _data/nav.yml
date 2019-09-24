@@ -1,13 +1,19 @@
 - title: What's new?
-- title: Business processes
-- title: Application documentation
-- title: Application Design
+- title: Naming conventions
   pages:
-    - title: Development guidelines
-      pages: 
-        - title: Naming conventions
-        - title: Code execution sequence using Chain-of-Commands and EventHandlers
-
-    - title: Architectural regulations
-    - title: UI design guidelines
-- title: Development process
+    - Naming basics
+    - Project and model naming
+    - Development project naming
+    - Object naming
+    - Code artefacts
+- title: Architectural regulations
+- title: Development guidelines
+- title: UI design guidelines
+- title: How to
+  pages:
+    - title: Integration
+- title: Examples
+  pages: 
+    - title: RunBase
+    - title: Code execution sequence using Chain-of-Commands and EventHandlers
+- pages: Links
