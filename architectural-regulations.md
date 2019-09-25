@@ -2,8 +2,7 @@
 layout: docs
 title: Architectural regulations
 description:
-group: application-design
-subgroup: architectural-regulations
+group: architectural-regulations
 toc: true
 ---
  

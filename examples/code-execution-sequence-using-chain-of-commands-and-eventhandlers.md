@@ -1,9 +1,8 @@
 ---
 layout: docs
 title: Code execution sequence using Chain-of-Commands and EventHandlers
-description:
-group: application-design
-subgroup: development-guidelines
+group: examples
+subgroup: code-execution-sequence-using-chain-of-commands-and-eventhandlers
 toc: true
 ---
 
