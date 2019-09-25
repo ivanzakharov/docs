@@ -22,6 +22,7 @@ Every Microsoft Dynamics 365 for Finance and Operations developer can contribute
 	Business Processes
 </div>
 <div class="col-6">
+
 - [Getting Started](https://zakharov.com)
 
 - [Working with Business Central](https://zakharov.com)
