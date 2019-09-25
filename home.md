@@ -1,3 +1,10 @@
-# Welcome aboard
+---
+layout: docs
+title: Home
+description:
+toc: true
+---
 
-This is the home page //
+# Architecting Microsoft Dynamics 365 for Finance and Operations
+
+This is the home page 
