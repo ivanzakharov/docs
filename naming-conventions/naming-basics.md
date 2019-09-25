@@ -3,6 +3,7 @@ layout: docs
 group: naming-conventions
 redirect_from:
   - "/naming-conventions/"
+    "/naming-conventions/naming-basics/"
 toc: true
 ---
 
