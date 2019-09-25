@@ -1,5 +1,5 @@
-- pages:
-    - Home
+pages:
+- Home
 - title: Naming conventions
   pages:
     - Naming basics
