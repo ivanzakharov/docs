@@ -1,7 +1,9 @@
 ---
 layout: docs
 title: Home
-description:
+group: home
+redirect_from:
+  - "/"
 toc: true
 ---
 
