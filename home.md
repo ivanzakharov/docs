@@ -17,23 +17,27 @@ Every Microsoft Dynamics 365 for Finance and Operations developer can contribute
 
 ---
 
-<div class="col-6">
-	**Business Processes**
+<div class="row">
+<div class="col-6 font-weight-bold">
+	Business Processes
 </div>
 <div class="col-6">
-- [Getting Started]
-- [Working with Business Central]
-- [Setting up Business Central]
-- [Administration]
-- [Business Functionality]
-- [Local Functionality]
-- [General Business Functionality]
-- [Business Process Walkthroughs]
-- [Application Design Details]
+- [Getting Started](https://zakharov.com)
+- [Working with Business Central](https://zakharov.com)
+- [Setting up Business Central](https://zakharov.com)
+- [Administration](https://zakharov.com)
+- [Business Functionality](https://zakharov.com)
+- [Local Functionality](https://zakharov.com)
+- [General Business Functionality](https://zakharov.com)
+- [Business Process Walkthroughs](https://zakharov.com)
+- [Application Design Details](https://zakharov.com)
+</div>
 </div>
 
 ---
 
-<div class="col-6">
+<div class="row">
+<div class="col-6 font-weight-bold">
 	**Developer and IT-pro content**
+</div>
 </div>
