@@ -13,10 +13,10 @@ toc: true
 New objects with following types are created with <b>_PRJ</b> suffix:
 - Base Enums
 - Extended Data Types
-- Tables
+- [Tables](tables.md)
 - Views
 - Queries
-- [Data Entities](#data-entities)
+- Data Entities
 - Composite Data Entities
 - Aggregate Data Entities
 - Maps
