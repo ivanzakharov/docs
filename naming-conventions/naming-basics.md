@@ -33,6 +33,8 @@ Naming conventions contribute to consistency and to making the application easie
   - Do not begin a name with "DEL\_" unless it is a table, extended data type or enum, and it is needed for data upgrade purposes. Names that use these prefixes cause a best practices error when you check the objects into the version control system.![Error icon](images/Aa872655.ErrorIcon(AX.60).gif "Error icon")
 
   - We do not support an EDT with the same name as a Table, EDT, Base Enum, or Class.
+  
+  - Hereafter <b>_PRJ</b> suffix used for customization in specific model (see [Models naming](model-naming.md)).
 
 Rules are available about the following:
 
