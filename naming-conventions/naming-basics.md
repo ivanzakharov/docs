@@ -18,7 +18,7 @@ Naming conventions contribute to consistency and to making the application easie
 
   - The default rule is to use logical and descriptive names if no other specialized rules apply.
 
-  - Identifier names have a limit of 80 characters.
+  - Identifier names have a limit of 81 characters.
 
   - Names in the Application Object Tree (AOT) and in X++ code must correspond to the names in the U.S. English user interface.
 
@@ -30,7 +30,7 @@ Naming conventions contribute to consistency and to making the application easie
 
   - All texts that appear in the user interface must be defined by using a label. (This rule applies only if you want your solution certified as an international solution.)
 
-  - Do not begin a name with "aaa", or "CopyOf". Do not begin a name with "DEL\_" unless it is a table, extended data type or enum, and it is needed for data upgrade purposes. Names that use these prefixes cause a best practices error when you check the objects into the version control system.![Error icon](images/Aa872655.ErrorIcon(AX.60).gif "Error icon")
+  - Do not begin a name with "DEL\_" unless it is a table, extended data type or enum, and it is needed for data upgrade purposes. Names that use these prefixes cause a best practices error when you check the objects into the version control system.![Error icon](images/Aa872655.ErrorIcon(AX.60).gif "Error icon")
 
   - We do not support an EDT with the same name as a Table, EDT, Base Enum, or Class.
 
