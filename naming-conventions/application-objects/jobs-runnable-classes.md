@@ -8,10 +8,11 @@ redirect_from:
 toc: true
 ---
 
-# Naming conventions for Tobs (Runnable classes)
+# Naming conventions for Jobs (Runnable classes)
 
 Standalone executed runnable classes (Jobs) are named as follows:<br/>
 _PRJAAAAA_BBBBBBBBB_, where<br/>
+_PRJ_ - acronim for current model (see [Model naming](model-naming.md))
 _AAAAA_ - work item Id, padded with zeros to the left of 5 characters<br/>
 _BBBBBBBBB_ - short title for Job in [UpperCamelCase](https://techterms.com/definition/camelcase)
 
