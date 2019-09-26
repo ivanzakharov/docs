@@ -3,7 +3,7 @@
   pages:
     - title: Overview
     - title: Naming basics
-    - title: Models naming  
+    - title: Model naming  
     - title: Application objects
       pages: 
         - title: Overview
@@ -18,7 +18,7 @@
       pages:
         - Overview
         - Methods
-    - title: Development projects
+    - title: Development project
 - title: Examples
   pages: 
     - title: Code execution sequence
