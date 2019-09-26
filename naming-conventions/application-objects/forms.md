@@ -31,7 +31,7 @@ For creation of class-extension following attribute is used:
 ### Datasources naming
 
 Datasources name must match the name of the table used. 
-In form extensions - with the <b>_PRJ</b> postfix. 
+In form extensions - with the <b>_PRJ</b> suffix. 
 
 ```
 Tables\PurchTable_PRJ (new table)
@@ -79,7 +79,7 @@ For creation of class-extension following attribute is used:
 ## Form controls
 
 ### Form controls naming
-All added from controls should have <b>_PRJ</b> postfix.
+All added from controls should have <b>_PRJ</b> suffix.
 
 ### Extending the form controls
 To name a handler class that implements the extension of the form controls, use the following principle:
