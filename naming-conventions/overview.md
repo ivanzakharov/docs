@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Naming conventions: Overview
+title: 'Naming conventions: Overview'
 group: naming-conventions
 subgroup: naming-overview
 redirect_from:
