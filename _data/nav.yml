@@ -16,8 +16,8 @@
         - title: Forms
     - title: Code artifacts 
       pages:
-        - Overview
-        - Methods
+        - title: Overview
+        - title: Methods
     - title: Development project
 - title: Examples
   pages: 
