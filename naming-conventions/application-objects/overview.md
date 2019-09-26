@@ -7,7 +7,3 @@ redirect_from:
   - "/naming-conventions/application-objects/"
 toc: true
 ---
-
-# Naming conventions for application objects
-
-
