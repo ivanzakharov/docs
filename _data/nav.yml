@@ -3,16 +3,21 @@
   pages:
     - title: Overview
     - title: Naming basics
+    - title: Models naming  
     - title: Application objects
       pages: 
         - title: Overview
         - title: New objects
         - title: Extended objects
+        - title: Tables
+        - title: Data Entities
+        - title: Classes
+        - title: Jobs (Runnable classes)
+        - title: Forms
     - title: Code artefacts 
       pages:
         - Overview
         - Methods
-    - title: Models naming
     - title: Development projects
 - title: Examples
   pages: 
