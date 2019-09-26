@@ -6,6 +6,7 @@ subgroup: application-objects
 redirect_from:
   - "/examples"
 toc: true
+---
 
 # Code execution sequence using Chain-of-Commands and EventHandlers
 
