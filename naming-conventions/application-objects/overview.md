@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: 'Naming conventions for application objects'
+title: Naming conventions for application objects
 group: naming-conventions
 subgroup: application-objects
 redirect_from:
