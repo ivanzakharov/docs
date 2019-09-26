@@ -7,7 +7,7 @@ redirect_from:
 toc: true
 ---
 
-# Architecting Dynamics 365 for Finance and Operations
+# Getting started
 
 This is an open source project that helps Microsoft Dynamics 365 for Finance and Operations developers improve their skills and approaches to build the best solutions. Developers can find information that describes the rules of development approach and recommended patterns for developing customizations for Microsoft Dynamics 365 for Finance and Operations.
 
