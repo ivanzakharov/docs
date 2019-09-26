@@ -10,7 +10,7 @@ toc: true
 
 # Extended objects
 
-Following extensions are created with <b>.Extension_PRJ</b> postfix:
+Following extensions are created with <b>.Extension_PRJ</b> suffix:
 - Base Enum Extensions
 - Extended Data Types Extensions
 - Table Extensions
