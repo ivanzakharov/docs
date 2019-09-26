@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: 'Naming basics for development projects'
+title: 'Naming basics for Development projects'
 group: naming-conventions
 subgroup: naming-basics
 redirect_from:
@@ -8,7 +8,7 @@ redirect_from:
 toc: true
 ---
 
-# Naming conventions for development projects
+# Naming conventions for Development projects
 Every single feature/functionality should be developed using Visual Studio and each development task should be linked with related task in Azure DevOps with further delivery to production.
 
 _Notes:<br/>
