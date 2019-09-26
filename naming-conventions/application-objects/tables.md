@@ -16,11 +16,11 @@ Fields on new tables are created without postfix.
 
 Examples:
 
-{% highlight cpp %}
+```
 TableExtensions\CategoryTable.Extension_PRJ\FIelds\CategoryGroupId_PRJ
 TableExtensions\InventTable.Extension_PRJ\FIelds\ItemConsumerGroup_PRJ
 Tables\ItemCategoryList_PRJ\Fields\ItemCategoryListId
-{% endhighlight %}
+```
 
 ## Methods 
 Methods on the new tables are created without postfix.<br/>
@@ -28,18 +28,18 @@ Methods on existing table are created with help of class extensions and without 
 
 Examples:
 
-{% highlight cpp %}
+```
 Tables\ItemCategoryList_PRJ\Methods\initItemCategoryListId()
 Tables\EcoResProductDivision_PRJ\Methods\find()
-{% endhighlight %}
+```
 
 Methods executing on existing table:
-{% highlight cpp %}
+```
 ...
 ecoResCategory.setCategoryGroupId_PRJ();
 inventTable\validateItemConsumerGroup_PRJ();
 ...
-{% endhighlight %}
+```
 
 ## Extending tables 
 
@@ -60,12 +60,13 @@ See also [Code execution sequence using Chain-of-Commands and EventHandlers](/de
 Examples:
 
 
-{% highlight cpp %}
+```
 Classes\SMAServiceOrderTable_PRJ_Extension
 Classes\PurchTable_RU_PRJ_Extension
-{% endhighlight %}
+```
+
 Для создания класса-обработчика используется атрибут _ExtensionOf_: 
-{% highlight cpp %}
+```
 [ExtensionOf(tableStr(PurchParmTable))] 
-{% endhighlight %}
+```
 
