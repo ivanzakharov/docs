@@ -12,7 +12,7 @@ toc: true
 
 Standalone executed runnable classes (Jobs) are named as follows:<br/>
 _PRJAAAAA_BBBBBBBBB_, where<br/>
-_PRJ_ - acronim for current model (see [Model naming](/../model-naming.md))<br/>
+_PRJ_ - acronim for current model (see [Model naming](/naming-conventions/model-naming.md))<br/>
 _AAAAA_ - work item Id, padded with zeros to the left of 5 characters<br/>
 _BBBBBBBBB_ - short title for Job in [UpperCamelCase](https://techterms.com/definition/camelcase)
 
