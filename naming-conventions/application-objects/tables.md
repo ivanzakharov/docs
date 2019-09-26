@@ -11,8 +11,8 @@ toc: true
 # Naming conventions for tables
 
 ## Fields
-Fields on table extensions should be named with postfix <b>_PRJ</b><br/>
-Fields on new tables are created without postfix.
+Fields on table extensions should be named with suffix <b>_PRJ</b><br/>
+Fields on new tables are created without suffix.
 
 Examples:
 
@@ -23,8 +23,8 @@ Tables\ItemCategoryList_PRJ\Fields\ItemCategoryListId
 ```
 
 ## Methods 
-Methods on the new tables are created without postfix.<br/>
-Methods on existing table are created with help of class extensions and without postfix.<br/>
+Methods on the new tables are created without suffix.<br/>
+Methods on existing table are created with help of class extensions and without suffix.<br/>
 
 Examples:
 
@@ -43,7 +43,7 @@ inventTable\validateItemConsumerGroup_PRJ();
 
 ## Extending tables 
 
-For extending/changing of behavior of methods on existing _standard_ tables new class-handlers are created, named with name of the origin table and postfix <b>_PRJ_Extension</b>.
+For extending/changing of behavior of methods on existing _standard_ tables new class-handlers are created, named with name of the origin table and suffix <b>_PRJ_Extension</b>.
 
 You should follow these guides with that:<br/>
 
