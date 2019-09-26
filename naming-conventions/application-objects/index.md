@@ -1,2 +1,2 @@
 redirect:
-  - "/overview/"
+  - "/application-objects/overview/"
