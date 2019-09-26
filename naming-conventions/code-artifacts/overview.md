@@ -4,7 +4,7 @@ title: 'Naming conventions for code artifacts'
 group: naming-conventions
 subgroup: application-objects
 redirect_from:
-  - "/naming-conventions/application-objects/"
+  - "/naming-conventions/code-artifacts/"
 toc: true
 ---
 
