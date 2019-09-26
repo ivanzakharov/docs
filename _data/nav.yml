@@ -3,14 +3,17 @@
   pages:
     - title: Overview
     - title: Naming basics
-- title: Architectural regulations
-- title: Development guidelines
-- title: UI design guidelines
-- title: How to
-  pages:
-    - title: Integration
+    - title: Application objects
+      pages: 
+        - title: Overview
+        - title: New objects
+        - title: Extended objects
+    - title: Code artefacts 
+      pages:
+        - Overview
+        - Methods
+    - title: Models naming
+    - title: Development projects
 - title: Examples
   pages: 
-    - title: RunBase
-    - title: Code execution sequence using Chain-of-Commands and EventHandlers
-- pages: Links
+    - title: Code execution sequence
