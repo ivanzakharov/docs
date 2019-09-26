@@ -1,14 +1,17 @@
 ---
 layout: docs
-title: Code execution sequence using Chain-of-Commands and EventHandlers
-group: examples
-subgroup: code-execution-sequence-using-chain-of-commands-and-eventhandlers
+title: 'Code execution sequence'
+group: naming-conventions
+subgroup: application-objects
+redirect_from:
+  - "/examples"
 toc: true
----
+
+# Code execution sequence using Chain-of-Commands and EventHandlers
 
 Take into account code execution sequence (1,2,3,4) for the following code:
 
-{% highlight cpp %}
+```
 [ExtensionOf(tableStr(ProjTable))]
 final class ProjTable_PRJ_Extension 
 {
@@ -37,4 +40,4 @@ final class ProjTable_PRJ_Extension
         // do something ..
     }
 }
-{% endhighlight %}
+```
