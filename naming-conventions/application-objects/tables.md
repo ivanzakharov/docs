@@ -8,8 +8,6 @@ redirect_from:
 toc: true
 ---
 
-# Naming conventions for tables
-
 ## Fields
 Fields on table extensions should be named with suffix <b>_PRJ</b><br/>
 Fields on new tables are created without suffix.
