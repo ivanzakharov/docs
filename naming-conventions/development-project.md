@@ -8,7 +8,6 @@ redirect_from:
 toc: true
 ---
 
-# Naming conventions for Development projects
 Every single feature/functionality should be developed using Visual Studio and each development task should be linked with related task in Azure DevOps with further delivery to production.
 
 _Notes:<br/>
