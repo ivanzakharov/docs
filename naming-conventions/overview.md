@@ -16,7 +16,7 @@ This topic provides naming rules:
 
 [Model naming](model-naming)
 
-[Application object](/naming-conventions/application-objects/overview)
+[Application objects](/naming-conventions/application-objects/overview)
 
 [Code artifacts](/naming-conventions/code-artifacts/overview)
 
