@@ -2,7 +2,7 @@
 layout: docs
 title: 'Naming conventions for Models'
 group: naming-conventions
-subgroup: naming-basics
+subgroup: model-naming
 redirect_from:
   - "/naming-conventions/"
 toc: true
