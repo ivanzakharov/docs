@@ -8,7 +8,6 @@ redirect_from:
 toc: true
 ---
 
-# Naming conventions for classes
 Extension of classes are named by adding the <b>_PRJ</b> and <b>_Extension</b> suffixes to the original class name.
 
 Examples:
