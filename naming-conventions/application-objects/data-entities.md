@@ -8,8 +8,6 @@ redirect_from:
 toc: true
 ---
 
-# Naming conventions for data entities
-
 ## Data entities for new objects
 For new data entities and new related objects (staging table, privileges) it is necessary to adhere to the following rules.
 
