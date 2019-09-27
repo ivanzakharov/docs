@@ -1,14 +1,12 @@
 ---
 layout: docs
-title: 'Code execution sequence'
+title: 'Code execution sequence using Chain-of-Commands and EventHandlers'
 group: naming-conventions
-subgroup: application-objects
+subgroup: code-execution-sequence
 redirect_from:
   - "/examples"
 toc: true
 ---
-
-# Code execution sequence using Chain-of-Commands and EventHandlers
 
 Take into account code execution sequence (1,2,3,4) for the following code:
 
