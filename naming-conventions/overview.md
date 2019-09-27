@@ -26,5 +26,5 @@ The following topics provide naming rules for code artifacts:
 
 The following topic provides naming rules for development projects:
 
-[Naming Conventions: Development project](development-project.md)
+[Development project](development-project.md)
 
