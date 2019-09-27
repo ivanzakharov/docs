@@ -42,7 +42,7 @@ New objects with following types are created with <b>_PRJ</b> suffix:
 - Configuration 
   - License Codes
   - Configuration Keys
-  - COnfiguration Key Groups
+  - Configuration Key Groups
 - Security Roles
 - Security Duties
 - Security Privileges
