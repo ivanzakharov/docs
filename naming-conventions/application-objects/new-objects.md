@@ -8,8 +8,6 @@ redirect_from:
 toc: true
 ---
 
-# Naming conventions for new application objects
-
 New objects with following types are created with <b>_PRJ</b> suffix:
 - Base Enums
 - Extended Data Types
