@@ -12,7 +12,7 @@ Naming conventions contribute to consistency and to making the application easie
 
 This topic provides naming rules:
 
-[Naming basics](naming-bacics).
+[Naming basics](naming-bacics)
 
 [Model naming](model-naming)
 
