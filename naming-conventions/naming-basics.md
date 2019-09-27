@@ -7,7 +7,6 @@ toc: true
 ---
 
 Naming conventions contribute to consistency and to making the application easier to understand.
-
 ## General Rules
 
   - All names must be in U.S. English.
