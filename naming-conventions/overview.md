@@ -8,34 +8,23 @@ redirect_from:
 toc: true
 ---
 
-# Naming conventions
-
 Naming conventions contribute to consistency and to making the application easier to understand.
+
+Read [Naming basics](naming-bacics.md) at first.
+
+This topic provides naming rule for application models:
+
+[Model naming](model-naming.md)
 
 The following topics provide naming rules for application objects:
 
-[Best Practices for Labels](best-practices-for-labels.md)
+[Classes](/application-objects/classes.md)
 
-[Naming Conventions: Name Structure](naming-conventions-name-structure.md)
+The following topics provide naming rules for code artifacts:
 
-[Naming Conventions: Use of Uppercase and Lowercase](naming-conventions-use-of-uppercase-and-lowercase.md)
+[Methods](/code-artifacts/methods.md)
 
-[Naming Conventions: Underscores](naming-conventions-underscores.md)
+The following topic provides naming rules for development projects:
 
-[Naming Conventions: Abbreviations](naming-conventions-abbreviations.md)
-
-[Naming Conventions: Prefixes](naming-conventions-prefixes.md)
-
-[Naming Convention: Automatically Generated Names](naming-convention-automatically-generated-names.md)
-
-[Naming Conventions: Variables](naming-conventions-variables.md)
-
-[Naming Conventions: License Codes](naming-conventions-license-codes.md)
-
-[Naming Conventions: Delegates and Event Handlers](naming-conventions-delegates-and-event-handlers.md)
-
-[Naming Conventions: Methods](naming-conventions-methods.md)
-
-The following topics provide naming rules for development projects:
-
+[Naming Conventions: Development project](development-project.md)
 
