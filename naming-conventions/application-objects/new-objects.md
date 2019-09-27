@@ -25,11 +25,24 @@ New objects with following types are created with <b>_PRJ</b> suffix:
 - Tiles
 - Menus
 - Menu Items
-- Analytics (and all its descendants)
-- Reports (and all its descendants)
+- Analytics
+  - Perspectives
+    - Aggregate Dimensions
+    - Aggregate Measurements
+    - Calculated Measure Templates
+    - Calculated Measure Period Templates
+  - Key Performance Indicators (KPI)
+- Reports 
+  - Reports
+  - Report Style Templates
+  - Report DataSources
+  - Report Images
 - Business Process and Workflow
 - Resources
-- Configuration (and all its descendants)
+- Configuration 
+  - License Codes
+  - Configuration Keys
+  - COnfiguration Key Groups
 - Security Roles
 - Security Duties
 - Security Privileges
