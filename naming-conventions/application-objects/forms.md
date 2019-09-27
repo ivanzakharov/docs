@@ -8,8 +8,6 @@ redirect_from:
 toc: true
 ---
 
-# Naming conventions for forms
-
 ## Extending the forms 
 To name a handler class that implements the extension of methods of an existing form, use the following principle:
 
