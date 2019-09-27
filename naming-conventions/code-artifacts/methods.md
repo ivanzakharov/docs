@@ -19,7 +19,7 @@ Tables\EcoResProductDivision_PRJ\Methods\find()
 
 
 Methods on the existing tables are created with help of class extensions also with suffix.<br/>
-See also [Extending tables](/application-objects/tables/#extending-the-tables).
+See also [Extending tables](/naming-conventions/application-objects/tables/#extending-the-tables).
 
 Examples for how they could be called:
 
