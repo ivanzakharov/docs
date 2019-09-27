@@ -23,7 +23,7 @@ Tables\ItemCategoryList_PRJ\Fields\ItemCategoryListId
 ## Methods 
 See [Naming conventions for methods](/code-artifacts/methods.md)
 
-## Extending tables 
+## Extending the tables 
 
 For extending/changing of behavior of methods on existing _standard_ tables new class-handlers are created, named with name of the origin table and suffix <b>_PRJ_Extension</b>.
 
