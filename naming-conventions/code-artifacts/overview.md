@@ -2,12 +2,10 @@
 layout: docs
 title: 'Naming conventions for code artifacts'
 group: naming-conventions
-subgroup: application-objects
+subgroup: code-artifacts
 redirect_from:
   - "/naming-conventions/code-artifacts/"
 toc: true
 ---
-
-# Naming conventions for code artifacts
 
 
