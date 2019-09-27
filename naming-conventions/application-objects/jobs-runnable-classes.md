@@ -1,14 +1,12 @@
 ---
 layout: docs
-title: 'Naming conventions for forms'
+title: 'Naming conventions for Jobs (Runnable classes)'
 group: naming-conventions
 subgroup: application-objects
 redirect_from:
   - "/naming-conventions/application-objects"
 toc: true
 ---
-
-# Naming conventions for Jobs (Runnable classes)
 
 Standalone executed runnable classes (Jobs) are named as follows:<br/>
 _PRJAAAAA_BBBBBBBBB_, where<br/>
