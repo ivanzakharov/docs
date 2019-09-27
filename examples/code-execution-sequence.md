@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: 'Code execution sequence using Chain-of-Commands and EventHandlers'
-group: naming-conventions
+group: examples
 subgroup: code-execution-sequence
 redirect_from:
   - "/examples"
