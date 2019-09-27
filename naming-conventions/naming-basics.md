@@ -8,8 +8,6 @@ redirect_from:
 toc: true
 ---
 
-# Naming basics
-
 Naming conventions contribute to consistency and to making the application easier to understand.
 
 ## General Rules
