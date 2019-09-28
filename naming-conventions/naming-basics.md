@@ -29,9 +29,7 @@ Naming conventions contribute to consistency and to making the application easie
 
   - EDT cannot be with the same name as a Table, Base Enum, or Class.
   
-  - Hereafter <b>_PRJ</b> suffix used for all customization in specific model (see [Model naming](model-naming)).
-  
-  - All customizations should have project suffix (see  referred as <b>_PRJ</b>).
-  
-  - Present naming conventions guarantee to have only one extension for the object. 
+## See also
+
+[Name structure](name-structure.md)
 
