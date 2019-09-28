@@ -3,7 +3,8 @@
   pages:
     - title: Overview
     - title: Naming basics
-    - title: Model naming  
+    - title: Model naming 
+    - title: Name structure
     - title: Application objects
       pages: 
         - title: Overview
