@@ -21,6 +21,7 @@
         - title: Functions
         - title: Variables
         - title: Keywords
+        - title: Delegates and event handlers
     - title: Design artifacts
       pages: 
         - title: Forms
