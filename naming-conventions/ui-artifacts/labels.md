@@ -20,7 +20,7 @@ You should not use text constants (for example "%1 - %2") to format labels.
 
 ## Languages
 
-Labels should be created for at least US-English language, accompaying with language of feature use.
+Labels should be created for US-English language and also all languages, as well as in all languages of use of the the feature.
 
 Describe the use of the text that is used in the label in US-English in the **Description** field on the **Label editor** form. 
 This is particularly important for shorter labels where the context is not completely clear.
