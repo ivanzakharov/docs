@@ -25,7 +25,9 @@ EcoResProductType_PRJ ecoResProductType_PRJ;
 ## Variable type
 Type of the variable should be used with same casing as defined.
 
-Primitive types have lowercase names. For example, str, date, int, real, void, boolean. ![Warning icon](images/Aa658028.WarningIcon(en-us,AX.60).gif "Warning icon")
+_true_, _false_, and _null_ are all lowercase.
+
+Primitive types (like _str_, _date_, _int_, _real_, _void_, _boolean_) have lowercase names.
 
 Examples:
 ```
