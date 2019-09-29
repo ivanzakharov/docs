@@ -10,7 +10,7 @@ toc: true
 
 ## Use of suffixes
 
-Methods on the new tables are created without suffix (as table should has it).<br/>
+Functions on the new tables are created without suffix (as table should has it).<br/>
 
 Examples:
 
@@ -20,7 +20,7 @@ Tables\EcoResProductDivision_PRJ\Methods\find()
 ```
 
 
-Methods on the existing tables are created with help of class extensions also with suffix.<br/>
+Functions on the existing tables are created with help of class extensions also with suffix.<br/>
 See also [Extending tables](/naming-conventions/application-objects/tables/#extending-the-tables).
 
 Examples for how they could be called:
@@ -30,10 +30,21 @@ ecoResCategory.setCategoryGroupId_PRJ();
 inventTable\validateItemConsumerGroup_PRJ();
 ```
 
+## Existing functions calling
+Calling of existing functions (including system functions) should use same case, as function defined.
+
+Follow IntelliSence suggestions in case of doubts.
+
+Examples:
+
+```
+info(strLTrim(strRTrim(strFmt("Hello, World"))));
+salesTable.DeliveryDate = dateNull();
+```
 
 ## Use of Uppercase and Lowercase 
 
-Methods have mixed-case names with a lowercase first letter. The first letter of each internal word is capitalized. 
+Functions have mixed-case names with a lowercase first letter. The first letter of each internal word is capitalized. 
 
 Examples:
 
