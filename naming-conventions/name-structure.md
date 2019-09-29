@@ -18,6 +18,10 @@ For classes:
 
 {business area name} + {business area description} + {action performed} + {[acronim for model](model-naming.md)}
 
+For forms:
+
+{business area name} + {business area description} + {type of contents/usability} + {[acronim for model](model-naming.md)}
+
 
 Examples:
 
@@ -28,6 +32,7 @@ Classes\PriceDiscAdmCopy_PRJ
 Classes\PriceDiscAdmDelete_PRJ
 Classes\PriceDiscAdmSearch_PRJ
 Classes\CustInvoicePrintout_PRJ
+Forms\PriceDiscAdministration_PRJ
 ```
 
 ## See also
