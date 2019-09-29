@@ -54,4 +54,4 @@ class EcoResAttributeValueFormEventHandler_PRJ
 ```
 
 _Important Notes:<br/>
-After implementing of new _Pre_-/_Post_- event handler, you should rebuild your model (during this build the XML files with the list of handlers will be updated in the Bin folder of the model)._
+After implementing of new Pre-/Post- event handler, you should rebuild your model (during this build the XML files with the list of handlers will be updated in the Bin folder of the model)._
