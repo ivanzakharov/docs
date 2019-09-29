@@ -36,3 +36,6 @@ Example:
 AddressFormatHeading
 SalesAmount
 ```
+
+### See also
+[lowCamelCase](https://ru.wikipedia.org/wiki/CamelCase)
