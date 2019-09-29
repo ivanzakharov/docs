@@ -22,6 +22,17 @@ EcoResProductCategory ecoResProductCategory;
 EcoResProductType_PRJ ecoResProductType_PRJ;
 ```
 
+## Variable type
+Type of the variable should be used with same casing as defined.
+
+Primitive types have lowercase names. For example, str, date, int, real, void, boolean. ![Warning icon](images/Aa658028.WarningIcon(en-us,AX.60).gif "Warning icon")
+
+Examples:
+```
+ItemId  itemId;
+int     i, k;
+```
+
 
 ## Table-variable used for record updation
 When using of table-variable especially for updating data record, use <b>Upd</b> suffix.
@@ -63,7 +74,7 @@ ecoResProductType_PRJTmp.checkProductType();
 ```
 
 
-## Existing variable
+## Global variables
 Variable declared in class declaration of parent class or form, should be used with exact cases as declared.
 
 
