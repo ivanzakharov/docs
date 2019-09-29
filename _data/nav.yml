@@ -18,7 +18,9 @@
     - title: Code artifacts 
       pages:
         - title: Overview
-        - title: Methods
+        - title: Functions
+        - title: Variables
+        - title: Keywords
     - title: Development project
 - title: Examples
   pages: 
