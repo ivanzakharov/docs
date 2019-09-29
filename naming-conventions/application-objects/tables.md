@@ -52,3 +52,12 @@ Classes\PurchTable_RU_PRJ_Extension
 [ExtensionOf(tableStr(PurchParmTable))] 
 ```
 
+## Temporary tables
+
+Temporary tables should be named with prefix <b>Tmp</b>.
+
+Examples:
+
+```
+TmpEcoResCategoryImport_PRJ
+```
