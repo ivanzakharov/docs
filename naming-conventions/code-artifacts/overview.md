@@ -14,5 +14,5 @@ Following rules are defined as naming convention for different code artifacts:
 
 [Variables](variables.md)
 
-[Reserverd words](keywords.md)
+[Reserved words](keywords.md)
 
