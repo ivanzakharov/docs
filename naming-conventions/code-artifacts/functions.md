@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: 'Naming conventions for methods'
+title: 'Naming conventions for functions'
 group: naming-conventions
 subgroup: code-artifacts
 redirect_from:
