@@ -24,6 +24,8 @@
         - title: Delegates and event handlers
     - title: Design artifacts
       pages: 
+        - title: Labels
+        - title: Helptext
         - title: Forms
         - title: Form controls
     - title: Labels
