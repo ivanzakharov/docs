@@ -21,6 +21,13 @@
         - title: Functions
         - title: Variables
         - title: Keywords
+    - title: Design artifacts
+      pages: 
+        - title: Forms
+        - title: Form controls
+    - title: Labels
+    - title: Underscores
+    - title: Prefixes
     - title: Development project
 - title: Examples
   pages: 
