@@ -39,6 +39,13 @@ Forms\VendInvoiceJour.Extension_PRJ\Datasources\PurchTable_PRJ (table PurchTable
 Forms\VendInvoiceJour.Extension_PRJ\Datasources\PurchTable_PRJ_PRJ (table PurchTable_PRJ)
 ```
 
+Datasource name for temporary table should be same as table name.
+
+```
+Tables\TmpEcoResCategoryImport_PRJ
+Forms\EcoResCategoryImportForm_PRJ\Datasources\TmpEcoResCategoryImport_PRJ
+```
+
 ### Extending the form datasources
 To name a handler class that implements the extension of methods of an existing form datasource, use the following principle:
 
