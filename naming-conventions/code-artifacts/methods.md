@@ -8,6 +8,8 @@ redirect_from:
 toc: true
 ---
 
+## Use of suffixes
+
 Methods on the new tables are created without suffix (as table should has it).<br/>
 
 Examples:
@@ -26,4 +28,22 @@ Examples for how they could be called:
 ```
 ecoResCategory.setCategoryGroupId_PRJ();
 inventTable\validateItemConsumerGroup_PRJ();
+```
+
+
+## Use of Uppercase and Lowercase 
+
+Methods have mixed-case names with a lowercase first letter. The first letter of each internal word is capitalized. 
+
+Examples:
+
+```
+classDeclaration TutorialExampleClass_PRJ
+{
+    public void nameThisMethodCorrectly()
+    {
+    }
+
+
+}
 ```
