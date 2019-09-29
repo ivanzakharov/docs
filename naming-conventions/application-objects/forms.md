@@ -114,101 +114,101 @@ For extending the forms, you may implement override-methods for form controls/da
 Benefits of this approach - to have single form extension class for all form customization:
 ```
 [ExtensionOf(formStr(EcoResProductCreate))]
-final class EcoResProductCreateForm_CNL_Extension 
+final class EcoResProductCreateForm_PRJ_Extension 
 {
     void init()
     {
         next init();
 
-        FormStringControl ctrlEcoResProductDivisionId_CNL = this.design().controlName(formcontrolstr(EcoResProductCreate, EcoResProductDivisionId_CNL));
-        ctrlEcoResProductDivisionId_CNL.registerOverrideMethod(methodStr(FormStringControl, modified),
-                                                               methodStr(EcoResProductCreateForm_CNL_Extension, EcoResProductDivisionId_CNL_modified), 
+        FormStringControl ctrlEcoResProductDivisionId_PRJ = this.design().controlName(formcontrolstr(EcoResProductCreate, EcoResProductDivisionId_PRJ));
+        ctrlEcoResProductDivisionId_PRJ.registerOverrideMethod(methodStr(FormStringControl, modified),
+                                                               methodStr(EcoResProductCreateForm_PRJ_Extension, EcoResProductDivisionId_PRJ_modified), 
                                                                this);
-        ctrlEcoResProductDivisionId_CNL.mandatory(EcoResProductParameters::find().ProductDivisionMandatory_CNL);
+        ctrlEcoResProductDivisionId_PRJ.mandatory(EcoResProductParameters::find().ProductDivisionMandatory_PRJ);
 
-        FormReferenceGroupControl ctrlProductTypeCategoryId_CNL = this.design().controlName(formcontrolstr(EcoResProductCreate, EcoResProductTypeCategoryId_CNL));
-        ctrlProductTypeCategoryId_CNL.registerOverrideMethod(methodStr(FormReferenceControl, resolveReference),
-                                                             methodStr(EcoResProductCreateForm_CNL_Extension, EcoResProductTypeCategoryId_CNL_resolveReference),
+        FormReferenceGroupControl ctrlProductTypeCategoryId_PRJ = this.design().controlName(formcontrolstr(EcoResProductCreate, EcoResProductTypeCategoryId_PRJ));
+        ctrlProductTypeCategoryId_PRJ.registerOverrideMethod(methodStr(FormReferenceControl, resolveReference),
+                                                             methodStr(EcoResProductCreateForm_PRJ_Extension, EcoResProductTypeCategoryId_PRJ_resolveReference),
                                                              this);
-        ctrlProductTypeCategoryId_CNL.registerOverrideMethod(methodStr(FormReferenceControl, lookupReference),
-                                                             methodStr(EcoResProductCreateForm_CNL_Extension, EcoResProductTypeCategoryId_CNL_lookupReference),
+        ctrlProductTypeCategoryId_PRJ.registerOverrideMethod(methodStr(FormReferenceControl, lookupReference),
+                                                             methodStr(EcoResProductCreateForm_PRJ_Extension, EcoResProductTypeCategoryId_PRJ_lookupReference),
                                                              this);
-        ctrlProductTypeCategoryId_CNL.registerOverrideMethod(methodStr(FormReferenceGroupControl, modified),
-                                                             methodStr(EcoResProductCreateForm_CNL_Extension, EcoResProductTypeCategoryId_CNL_modified),
+        ctrlProductTypeCategoryId_PRJ.registerOverrideMethod(methodStr(FormReferenceGroupControl, modified),
+                                                             methodStr(EcoResProductCreateForm_PRJ_Extension, EcoResProductTypeCategoryId_PRJ_modified),
                                                              this);
-        ctrlProductTypeCategoryId_CNL.mandatory(EcoResProductParameters::find().ProductTypeCategoryMandatory_CNL);
+        ctrlProductTypeCategoryId_PRJ.mandatory(EcoResProductParameters::find().ProductTypeCategoryMandatory_PRJ);
 
-        FormReferenceGroupControl ctrlProductOriginCategoryId_CNL = this.design().controlName(formcontrolstr(EcoResProductCreate, EcoResProductOriginCategoryId_CNL));
-        ctrlProductOriginCategoryId_CNL.registerOverrideMethod(methodStr(FormReferenceControl, resolveReference),
-                                                               methodStr(EcoResProductCreateForm_CNL_Extension, EcoResProductOriginCategoryId_CNL_resolveReference),
+        FormReferenceGroupControl ctrlProductOriginCategoryId_PRJ = this.design().controlName(formcontrolstr(EcoResProductCreate, EcoResProductOriginCategoryId_PRJ));
+        ctrlProductOriginCategoryId_PRJ.registerOverrideMethod(methodStr(FormReferenceControl, resolveReference),
+                                                               methodStr(EcoResProductCreateForm_PRJ_Extension, EcoResProductOriginCategoryId_PRJ_resolveReference),
                                                                this);
-        ctrlProductOriginCategoryId_CNL.registerOverrideMethod(methodStr(FormReferenceControl, lookupReference),
-                                                               methodStr(EcoResProductCreateForm_CNL_Extension, EcoResProductOriginCategoryId_CNL_lookupReference),
+        ctrlProductOriginCategoryId_PRJ.registerOverrideMethod(methodStr(FormReferenceControl, lookupReference),
+                                                               methodStr(EcoResProductCreateForm_PRJ_Extension, EcoResProductOriginCategoryId_PRJ_lookupReference),
                                                                this);
-        ctrlProductOriginCategoryId_CNL.registerOverrideMethod(methodStr(FormReferenceGroupControl, modified),
-                                                               methodStr(EcoResProductCreateForm_CNL_Extension, EcoResProductOriginCategoryId_CNL_modified),
+        ctrlProductOriginCategoryId_PRJ.registerOverrideMethod(methodStr(FormReferenceGroupControl, modified),
+                                                               methodStr(EcoResProductCreateForm_PRJ_Extension, EcoResProductOriginCategoryId_PRJ_modified),
                                                                this);
-        ctrlProductOriginCategoryId_CNL.mandatory(EcoResProductParameters::find().ProductOriginCategoryMandatory_CNL);
+        ctrlProductOriginCategoryId_PRJ.mandatory(EcoResProductParameters::find().ProductOriginCategoryMandatory_PRJ);
     }
 
-    boolean EcoResProductDivisionId_CNL_modified(FormStringControl _sender)
+    boolean EcoResProductDivisionId_PRJ_modified(FormStringControl _sender)
     {
         boolean ret = _sender.modified();
 
         if (ret)
         {
-            this.productData().identification_CNL().parmProductDivisionId_CNL(_sender.valueStr());
+            this.productData().identification_PRJ().parmProductDivisionId_PRJ(_sender.valueStr());
         }
 
         return ret;
     }
 
-    public Common EcoResProductTypeCategoryId_CNL_resolveReference(FormReferenceControl _formReferenceControl)
+    public Common EcoResProductTypeCategoryId_PRJ_resolveReference(FormReferenceControl _formReferenceControl)
     {
         return EcoResCategory::resolveCategoryHierarchyRole(
             _formReferenceControl,
-            EcoResCategoryNamedHierarchyRole::ProductType_CNL);
+            EcoResCategoryNamedHierarchyRole::ProductType_PRJ);
     }
 
-    public Common EcoResProductTypeCategoryId_CNL_lookupReference(FormReferenceControl _formReferenceControl)
+    public Common EcoResProductTypeCategoryId_PRJ_lookupReference(FormReferenceControl _formReferenceControl)
     {
         return EcoResCategory::lookupCategoryHierarchyRole(
             _formReferenceControl,
-            EcoResCategoryNamedHierarchyRole::ProductType_CNL,
+            EcoResCategoryNamedHierarchyRole::ProductType_PRJ,
             true);
     }
 
-    boolean EcoResProductTypeCategoryId_CNL_modified(FormReferenceGroupControl _formReferenceGroupControl)
+    boolean EcoResProductTypeCategoryId_PRJ_modified(FormReferenceGroupControl _formReferenceGroupControl)
     {
         boolean ret = _formReferenceGroupControl.modified();
         if (ret)
         {
-            this.productData().identification_CNL().parmProductTypeCategoryId_CNL(_formReferenceGroupControl.value());
+            this.productData().identification_PRJ().parmProductTypeCategoryId_PRJ(_formReferenceGroupControl.value());
         }
         return ret;
     }
 
-    public Common EcoResProductOriginCategoryId_CNL_resolveReference(FormReferenceControl _formReferenceControl)
+    public Common EcoResProductOriginCategoryId_PRJ_resolveReference(FormReferenceControl _formReferenceControl)
     {
         return EcoResCategory::resolveCategoryHierarchyRole(
             _formReferenceControl,
-            EcoResCategoryNamedHierarchyRole::ProductOrigin_CNL);
+            EcoResCategoryNamedHierarchyRole::ProductOrigin_PRJ);
     }
 
-    public Common EcoResProductOriginCategoryId_CNL_lookupReference(FormReferenceControl _formReferenceControl)
+    public Common EcoResProductOriginCategoryId_PRJ_lookupReference(FormReferenceControl _formReferenceControl)
     {
         return EcoResCategory::lookupCategoryHierarchyRole(
             _formReferenceControl,
-            EcoResCategoryNamedHierarchyRole::ProductOrigin_CNL,
+            EcoResCategoryNamedHierarchyRole::ProductOrigin_PRJ,
             true);
     }
 
-    boolean EcoResProductOriginCategoryId_CNL_modified(FormReferenceGroupControl _formReferenceGroupControl)
+    boolean EcoResProductOriginCategoryId_PRJ_modified(FormReferenceGroupControl _formReferenceGroupControl)
     {
         boolean ret = _formReferenceGroupControl.modified();
         if (ret)
         {
-            this.productData().identification_CNL().parmProductOriginCategoryId_CNL(_formReferenceGroupControl.value());
+            this.productData().identification_PRJ().parmProductOriginCategoryId_PRJ(_formReferenceGroupControl.value());
         }
         return ret;
     }
@@ -217,11 +217,11 @@ final class EcoResProductCreateForm_CNL_Extension
     {
         boolean ret = next validateWrite();
 
-        ret = EcoResProductDivisionId_CNL.validate() && ret;
+        ret = EcoResProductDivisionId_PRJ.validate() && ret;
 
-        ret = EcoResProductTypeCategoryId_CNL.validate() && ret;
+        ret = EcoResProductTypeCategoryId_PRJ.validate() && ret;
 
-        ret = EcoResProductOriginCategoryId_CNL.validate() && ret;
+        ret = EcoResProductOriginCategoryId_PRJ.validate() && ret;
 
         return ret;
     }
