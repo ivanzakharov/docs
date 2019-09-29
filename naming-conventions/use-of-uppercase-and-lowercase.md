@@ -8,18 +8,6 @@ redirect_from:
 toc: true
 ---
 
-Application objects names are mixed case. The first letter of the application object is uppercase. 
-The first letter of each internal word is uppercase. 
-
-Example:
-
-```
-AddressFormatHeading
-SalesAmount
-```
-
-Application objects include tables, maps, extended data types, base enums, table collections, macros, classes, forms, reports, queries, menus, and menu items.
-
 
 Methods, system functions, and variables have mixed-case names with a lowercase first letter. ![Warning icon](images/Aa658028.WarningIcon(en-us,AX.60).gif "Warning icon") The first letter of each internal word is capitalized. For example, classDeclaration, createProject.
 
@@ -33,3 +21,9 @@ true, false, and null are all lowercase.
 > [!TIP]
 > <P>Use the function <STRONG>Add-Ins</STRONG> &gt; <STRONG>Source code title case update</STRONG> to "wash" your code to have correct case.</P>
 > <P>If you use version control within Microsoft Dynamics AX and the <STRONG>RunTitleCaseUpdate</STRONG> option has been set to Yes, errors in the capitalization of the first letter of names are automatically corrected when you check the object in. The <STRONG>RunTitleCaseUpdate</STRONG> option is typically set by an administrator. It is available on the <STRONG>General</STRONG> tab of the <STRONG>Version Control Configuration</STRONG> form, which can be opened from <STRONG>Tools</STRONG> &gt; <STRONG>Development tools</STRONG> &gt; <STRONG>Version control</STRONG> &gt; <STRONG>Setup</STRONG> &gt; <STRONG>System settings</STRONG>.</P>
+
+
+
+## See also
+
+[Temporary tables](/application-objects/tables.md/#temporary-tables)
