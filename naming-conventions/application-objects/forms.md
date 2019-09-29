@@ -21,7 +21,7 @@ Forms\LedgerJournalTransDaily – Classes\LedgerJournalTransDailyForm_PRJ_Extens
 
 For creation of class-extension following attribute is used:
 ```
-[ExtensionOf(formStr (PurchEditLines))]
+[ExtensionOf(formStr(PurchEditLines))]
 ```
 
 ## Datasources
@@ -49,7 +49,9 @@ Forms\EcoResCategoryImportForm_PRJ\Datasources\TmpEcoResCategoryImport_PRJ
 ### Extending the form datasources
 To name a handler class that implements the extension of methods of an existing form datasource, use the following principle:
 
-```Classes\<FormFullName>Form_<DatasourceFullName><b>DS_PRJ_Extension</b>```
+```
+Classes\<FormFullName>Form_<DatasourceFullName><b>DS_PRJ_Extension</b>
+```
 
 Examples:
 
