@@ -16,3 +16,4 @@ Following rules are defined as naming convention for different code artifacts:
 
 [Keywords](keywords.md)
 
+[Delegates and Event handlers](delegates-and-event-handlers.md)
