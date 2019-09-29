@@ -8,4 +8,11 @@ redirect_from:
 toc: true
 ---
 
+Following rules are defined as naming convention for different code artifacts:
+
+[Methods](methods.md)
+
+[Variables](variables.md)
+
+[Reserverd words](keywords.md)
 
