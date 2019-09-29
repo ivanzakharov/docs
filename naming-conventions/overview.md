@@ -20,6 +20,8 @@ This topic provides naming rules:
 
 [Code artifacts](/naming-conventions/code-artifacts/overview)
 
+[UI artifacts](/naming-conventions/ui-artifacts/overview)
+
 [Underscores](underscores)
 
 [Development project](development-project)
