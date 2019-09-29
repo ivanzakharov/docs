@@ -10,7 +10,7 @@ toc: true
 
 Following rules are defined as naming convention for different code artifacts:
 
-[Methods](methods.md)
+[Functions](functions.md)
 
 [Variables](variables.md)
 
