@@ -28,7 +28,7 @@ The comment is used when the label is translated to other languages.
 
 ## Inherit Labels from Underlying Data Types
 
-The contents of label-type properties are usually automatically taken from the underlying definitions. For example, the label used for a field HelpText is often inherited from the HelpText of the underlying extended data type. It is an error to insert the same label as that used in the underlying definition (inherit it, do not duplicate it). ![Error icon](images/Aa872655.ErrorIcon(AX.60).gif "Error icon")
+The contents of label-type properties are usually automatically taken from the underlying definitions. For example, the label used for a field HelpText is often inherited from the HelpText of the underlying extended data type. It is an error to insert the same label as that used in the underlying definition (inherit it, do not duplicate it). 
 
 However, the label should be changed, if a different description is needed for the item. The following illustration shows a typical situation:
 
