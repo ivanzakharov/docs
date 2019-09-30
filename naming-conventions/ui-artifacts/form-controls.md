@@ -16,4 +16,8 @@ Use following suffixes for specific for control types:
 --------------------|---------------------------|----------|---------------------|----------|
 | Tab | *Tab_PRJ | <b>Tab_PRJ</b><br/> Header<b>Tab_PRJ</b><br/> Lines<b>Tab_PRJ</b> | *Tab | <b>Tab</b><br/> Header<b>Tab</b><br/> Trans<b>Tab</b> |
 | TabPage | *TabPage_PRJ | General<b>TabPage_PRJ</b><br/> Overview<b>TabPage_PRJ</b> | *TabPage | Overview<b>TabPage</b> |
+| Group | *Group_PRJ | Identification<b>Group_PRJ</b> | *Group | Product<b>Group</b> |
+| MenuItemButton<br/> CommandButton<br/> | *Button_PRJ | Execute<b>Button_PRJ</b><br/>CustTransOpen<b>Button_PRJ</b> | *Button | Run<b>Button</b> |
+
+  
 
