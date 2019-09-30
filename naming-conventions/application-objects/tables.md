@@ -54,10 +54,11 @@ Classes\PurchTable_RU_PRJ_Extension
 
 ## Temporary tables
 
-Temporary tables should be named with prefix <b>Tmp</b>.
+Temporary tables, either InMemory or TempDB, should be named with prefix <b>Tmp</b>.
 
 Examples:
 
 ```
 TmpEcoResCategoryImport_PRJ
+TmpMarkReportTable_PRJ
 ```
