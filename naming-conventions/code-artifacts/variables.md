@@ -10,7 +10,7 @@ toc: true
 
 Variables have mixed-case names with a lowercase first letter. The first letter of each internal word is capitalized. 
 
-Suffix with [model acronim](/naming-conventions/model-naming.md) should remain in variable name.
+Suffix with [model acronim](/naming-conventions/model-naming/) should remain in variable name.
 
 Examples
 
