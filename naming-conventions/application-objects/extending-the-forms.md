@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: 'Naming conventions for forms'
+title: 'Naming conventions for Extending the forms'
 group: naming-conventions
 subgroup: application-objects
 redirect_from:
@@ -8,7 +8,14 @@ redirect_from:
 toc: true
 ---
 
-## Extending the forms 
+## Naming
+
+Naming of the form should be align with [Naming basics](/naming-conventions/naming-basics/) and [New application objects](/naming-conventions/application-objects/new-objects/) 
+
+Also, see [Form datasoruce naming](/naming-conventions/ui-artifacts/form-datasources.md) and [Form control naming](/naming-conventions/ui-artifacts/form-controls/)
+
+## Extending the forms
+
 To name a handler class that implements the extension of methods of an existing form, use the following principle:
 
 Classes\<FormFullName><b>Form_PRJ_Extension</b>
@@ -24,29 +31,7 @@ For creation of class-extension following attribute is used:
 [ExtensionOf(formStr(PurchEditLines))]
 ```
 
-## Datasources
-
-### Datasources naming
-
-Datasources name must match the name of the table used. 
-In form extensions - with the <b>_PRJ</b> suffix. 
-
-```
-Tables\PurchTable_PRJ (new table)
-Forms\PurchTable.Extension_PRJ (form extension)
-Forms\PurchTable.Extension_PRJ\Datasources\VendTable_PRJ (new datasource on form extension)
-Forms\VendInvoiceJour.Extension_PRJ\Datasources\PurchTable_PRJ (table PurchTable)
-Forms\VendInvoiceJour.Extension_PRJ\Datasources\PurchTable_PRJ_PRJ (table PurchTable_PRJ)
-```
-
-Datasource name for temporary table should be same as table name.
-
-```
-Tables\TmpEcoResCategoryImport_PRJ
-Forms\EcoResCategoryImportForm_PRJ\Datasources\TmpEcoResCategoryImport_PRJ
-```
-
-### Extending the form datasources
+## Extending the form datasources
 To name a handler class that implements the extension of methods of an existing form datasource, use the following principle:
 
 ```
@@ -83,12 +68,7 @@ For creation of class-extension following attribute is used:
 [ExtensionOf(formDataFieldStr(PurchEditLines, PurchParmUpdate,CheckCreditMax))]
 ```
 
-## Form controls
-
-### Form controls naming
-All added from controls should have <b>_PRJ</b> suffix.
-
-### Extending the form controls
+## Extending the form controls
 To name a handler class that implements the extension of the form controls, use the following principle:
 
 ```Classes\\<FormFullName>Form_<ControlFullName>Ctrl<b>_PRJ_Extension</b>```
@@ -108,6 +88,8 @@ For creation of class-extension following attribute is used:
 _Notes:
 Since the class name is limited to 80 characters, you can shorten the name of the field or data source (but not the form!)._
 
+## See also
+[Form ]
 
 ## Alternate way to extending the forms 
 For extending the forms, you may implement override-methods for form controls/datasources/fields.<br>
