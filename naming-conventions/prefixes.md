@@ -24,7 +24,7 @@ Following prefixes should be used in different subject areas:
 | Ledger | Ledger* | |
 | Project | Proj* | | 
 | Production | Prod* | |
-| Warehouse management | WMS*</br>WHS* | <b>WMS</b>OrderSplit |
+| Warehouse management | WMS*<br/>WHS* | <b>WMS</b>OrderSplit |
 
 ## Application area object prefix
 
