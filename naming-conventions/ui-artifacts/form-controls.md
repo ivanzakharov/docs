@@ -14,6 +14,6 @@ Use following suffixes for specific for control types:
 
 | Form control type | Suffix for form-extension | Examples | Suffix for new form | Examples | 
 --------------------|---------------------------|----------|---------------------|----------|
-| Tab | *Tab_PRJ | <b>Tab_PRJ</b></br> Header<b>Tab_PRJ</b></b> Lines<b>Tab_PRJ</b> | *Tab | <b>Tab</b></br> Header<b>Tab</b></br> Trans<b>Tab</b></br> |
-| TabPage | *TabPage_PRJ | General<b>TabPage_PRJ</b></br> Overview<b>TabPage_PRJ</b> | *TabPage | Overview<b>TabPage</b> |
+| Tab | *Tab_PRJ | <b>Tab_PRJ</b><br/> Header<b>Tab_PRJ</b><br/> Lines<b>Tab_PRJ</b> | *Tab | <b>Tab</b><br/> Header<b>Tab</b><br/> Trans<b>Tab</b> |
+| TabPage | *TabPage_PRJ | General<b>TabPage_PRJ</b><br/> Overview<b>TabPage_PRJ</b> | *TabPage | Overview<b>TabPage</b> |
 
