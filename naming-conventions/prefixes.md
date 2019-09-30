@@ -8,28 +8,32 @@ redirect_from:
 toc: true
 ---
 
-## Subject Area Object Prefix
+## Subject area object prefix
 
-A subject area specific application object is prefixed with the name of the subject area the object belongs to, for example Cust\*, Invent\*, Ledger\*, Proj\*, Vend\*.
+A subject area specific application object is prefixed with the name of the subject area the object belongs to.
 
-Examples:
+Following prefixes should be used in different subject areas:
 
-```
-WMSOrderSplit
-CustBankAccount
-CustBalanceCurrency
-InventAccountType
-```
+| Subject area | Prefix | Examples |
+------------------------------------
+| Inventory | Invent* | <b>Invent</b>AccountType_PRJ |
+| Products | EcoResProduct* | <b>EcoResProduct</b>Type_PRJ |
+| Customers | Cust* | <b>Cust</b>BankAccount</br> <b>Cust</b>BalanceCurrency |
+| Vendors | Vend* | |
+| Ledger | Ledger* | |
+| Project | Proj* | | 
+| Production | Prod* | |
+| Warehouse management | WMS*</br>WHS* | <b>WMS</b>OrderSplit |
 
 ## Application Area Object Prefix
 
 An application area object is prefixed with the name of the application area the object belongs to.
 
-Examples:
-```
-Aif*
-Sys*
-```
+| Subject area | Prefix | Examples |
+------------------------------------
+| System wide feature | Sys*</br>System* | <b>Sys</b>Environments_PRJ |
+| Workflow | Workflow* | |
+| Data Management Framework | DMF* | | 
 
 ## The DEL\_ Prefix
 
