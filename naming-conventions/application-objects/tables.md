@@ -21,7 +21,7 @@ Tables\ItemCategoryList_PRJ\Fields\ItemCategoryListId
 ```
 
 ## Methods 
-See [Naming conventions for methods](/code-artifacts/methods.md)
+See [Naming conventions for methods](/naming-conventions/code-artifacts/methods.md)
 
 ## Extending the tables 
 
