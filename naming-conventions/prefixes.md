@@ -18,6 +18,7 @@ Following prefixes should be used in different subject areas:
 ---------------|--------|-----------
 | Inventory | Invent* | <b>Invent</b>AccountType_PRJ |
 | Products | EcoResProduct* | <b>EcoResProduct</b>Type_PRJ |
+| Product categories | EcoResCategory* | <b>EcoResCategory</b>Class_PRJ |
 | Customers | Cust* | <b>Cust</b>BankAccount</br> <b>Cust</b>BalanceCurrency |
 | Vendors | Vend* | |
 | Ledger | Ledger* | |
