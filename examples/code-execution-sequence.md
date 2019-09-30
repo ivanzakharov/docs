@@ -4,7 +4,7 @@ title: 'Code execution sequence using Chain-of-Commands and EventHandlers'
 group: examples
 subgroup: code-execution-sequence
 redirect_from:
-  - "/examples"
+  - "/examples/"
 toc: true
 ---
 
