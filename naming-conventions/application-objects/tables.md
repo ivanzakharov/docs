@@ -37,7 +37,7 @@ You should follow these guides with that:<br/>
 
 Using of CoC (Chain of Commands) is more reasonable. If not possible, it is allowed to use EventHandlers.
 
-See also [Code execution sequence using Chain-of-Commands and EventHandlers](/development-guidlines/code-execution-sequence-using-chain-of-commands-and-eventhandlers/)
+See also [Code execution sequence using Chain-of-Commands and EventHandlers](/examples/code-execution-sequence/)
 
 Examples:
 
