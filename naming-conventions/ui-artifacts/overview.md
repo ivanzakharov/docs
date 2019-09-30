@@ -14,6 +14,6 @@ Following rules are defined as naming convention for different UI artifacts:
 
 [Helptext](helptext.md)
 
-[Forms](forms.md)
+[Form datasources](form-datasources.md)
 
 [Form controls](form-controls.md)
