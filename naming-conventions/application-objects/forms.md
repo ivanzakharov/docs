@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: 'Naming conventions for Extending the forms'
+title: 'Naming conventions for Forms'
 group: naming-conventions
 subgroup: application-objects
 redirect_from:
@@ -12,7 +12,7 @@ toc: true
 
 Naming of the form should be align with [Naming basics](/naming-conventions/naming-basics/) and [New application objects](/naming-conventions/application-objects/new-objects/) 
 
-Also, see [Form datasoruce naming](/naming-conventions/ui-artifacts/form-datasources.md) and [Form control naming](/naming-conventions/ui-artifacts/form-controls/)
+Also, see naming for [Form datasource](/naming-conventions/ui-artifacts/form-datasources/) and [Form controls](/naming-conventions/ui-artifacts/form-controls/)
 
 ## Extending the forms
 
