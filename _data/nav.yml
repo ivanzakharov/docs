@@ -18,10 +18,10 @@
     - title: Code artifacts 
       pages:
         - title: Overview
-        - title: Functions
+        - title: Methods
         - title: Variables
         - title: Keywords
-        - title: Delegates and event handlers
+        - title: Delegates and Event handlers
     - title: UI artifacts
       pages: 
         - title: Labels
