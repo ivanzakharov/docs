@@ -75,6 +75,20 @@ ecoResProductType_PRJTmp.setTmp();
 ecoResProductType_PRJTmp.checkProductType();
 ```
 
+## RunBase* extensions
+
+Use prefix <b>dialog</b> for naming variable of dialog form controls (using _DialogField_ class)
+Use prefix <b>dialogGroup</b> for naming variable of dialog form controls (using _DialogGroup_ class)
+
+Examples:
+
+```
+ItemGroupId itemGroupId;
+DialogField dialogItemGroupId;
+
+DialogGroup itemGroup;
+```
+
 
 ## Global variables
 Variable declared in class declaration of parent class or form, should be used with exact cases as declared.
