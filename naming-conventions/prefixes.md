@@ -15,7 +15,7 @@ A subject area specific application object is prefixed with the name of the subj
 Following prefixes should be used in different subject areas:
 
 | Subject area | Prefix | Examples |
-------------------------------------
+---------------|--------|-----------
 | Inventory | Invent* | <b>Invent</b>AccountType_PRJ |
 | Products | EcoResProduct* | <b>EcoResProduct</b>Type_PRJ |
 | Customers | Cust* | <b>Cust</b>BankAccount</br> <b>Cust</b>BalanceCurrency |
@@ -30,7 +30,7 @@ Following prefixes should be used in different subject areas:
 An application area object is prefixed with the name of the application area the object belongs to.
 
 | Subject area | Prefix | Examples |
-------------------------------------
+---------------|--------|-----------
 | System wide feature | Sys*</br>System* | <b>Sys</b>Environments_PRJ |
 | Workflow | Workflow* | |
 | Data Management Framework | DMF* | | 
