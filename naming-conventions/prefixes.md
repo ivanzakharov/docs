@@ -32,7 +32,7 @@ An application area object is prefixed with the name of the application area the
 
 | Subject area | Prefix | Examples |
 ---------------|--------|-----------
-| System wide feature | Sys*</br>System* | <b>Sys</b>Environments_PRJ |
+| System wide feature | Sys*<br/>System* | <b>Sys</b>Environments_PRJ |
 | Workflow | Workflow* | |
 | Data Management Framework | DMF* | | 
 
