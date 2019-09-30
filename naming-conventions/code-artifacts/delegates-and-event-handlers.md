@@ -12,7 +12,7 @@ This topic provides the naming convention for delegates and event handlers when 
 
 ## Delegate Naming Conventions
 
-When you name a delegate, follow the general [Naming Conventions](/naming-conventions/overview.md) for X++ and the [Naming Conventions for Methods](/naming-conventions/code-artifacts/methods.md). The following list describes additional naming guidelines for delegates.
+When you name a delegate, follow the general [Naming Conventions](/naming-conventions/overview/) for X++ and the [Naming Conventions for Methods](/naming-conventions/code-artifacts/methods/). The following list describes additional naming guidelines for delegates.
 
   - The two components of the name should be a noun (for example _invoice_) and a verb (for example _opening_ or _opened_). An example is _invoiceOpened_. When the class name is a noun, the noun can be omitted from the delegate name. For example, _Invoice\opened()_.
     
