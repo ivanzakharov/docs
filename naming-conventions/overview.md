@@ -12,9 +12,9 @@ Naming conventions contribute to consistency and to making the application easie
 
 This topic provides naming rules:
 
-[Naming basics](naming-basics)
+[Naming basics](/naming-conventions/naming-basics)
 
-[Model naming](model-naming)
+[Model naming](/naming-conventions/model-naming)
 
 [Application objects](/naming-conventions/application-objects/overview)
 
@@ -22,7 +22,7 @@ This topic provides naming rules:
 
 [UI artifacts](/naming-conventions/ui-artifacts/overview)
 
-[Underscores](underscores)
+[Underscores](/naming-conventions/underscores)
 
-[Development project](development-project)
+[Development project](/naming-conventions/development-project)
 
