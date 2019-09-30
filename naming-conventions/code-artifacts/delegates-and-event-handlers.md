@@ -20,7 +20,7 @@ When you name a delegate, follow the general [Naming Conventions](/naming-conven
     
     Use past tense for logic that runs after an event occurs (end with _ed_)
 
-  - The following example illustrates definitions of two delegates creating and created in the _Invoice_ class that is a noun.
+  - The following example illustrates definitions of two delegates _creating_ and _created_ in the _Invoice_ class that is a noun.
     
     ```
     class Invoice
