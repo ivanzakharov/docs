@@ -10,7 +10,7 @@ toc: true
 
 ## Naming
 
-Naming of the form should be align with [Naming basics](/naming-conventions/naming-basics/) and [New application objects](/naming-conventions/application-objects/new-objects/) 
+Naming of the form should be align with [Naming basics](/naming-conventions/naming-basics/) and [New application objects](/naming-conventions/application-objects/new-objects/) naming conventions.
 
 Also, see naming for [Form datasources](/naming-conventions/ui-artifacts/form-datasources/) and [Form controls](/naming-conventions/ui-artifacts/form-controls/)
 
