@@ -26,7 +26,7 @@ Following prefixes should be used in different subject areas:
 | Production | Prod* | |
 | Warehouse management | WMS*</br>WHS* | <b>WMS</b>OrderSplit |
 
-## Application Area Object Prefix
+## Application area object prefix
 
 An application area object is prefixed with the name of the application area the object belongs to.
 
@@ -36,7 +36,7 @@ An application area object is prefixed with the name of the application area the
 | Workflow | Workflow* | |
 | Data Management Framework | DMF* | | 
 
-## The DEL\_ Prefix
+## The DEL\_ prefix
 
 DEL\_ is a special prefix. It is an abbreviation for Deleted and is used for application objects that will be deleted. After an object is prefixed with DEL\_, it will be supported for a release and then deleted in the next version of the product.
 
