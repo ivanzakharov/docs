@@ -14,16 +14,21 @@ Modern D365FO requires a new way of naming objects, which will be fully combined
 
 ## Suffixes instead of prefixes
 
-We use [model acronim](/naming-conventions/model-naming/) as suffix with implementing any needed customizations. With that we will gain following:
+We use [model acronim](/naming-conventions/model-naming/) as suffix with implementing any needed customizations. 
 
-- According with [Development guidelines](/development-guidelines/overview/)(to have only one extension for object per model), proposed naming will help the developer easily find the existing extensions or customizations for the object.<br/>Thus class-extentions will be aligned with extended class as well as inherited-classes.
+Also, we use following naming convention for: [New objects](/naming-conventions/application-objects/new-objects/) and [Extended objects](/naming-conventions/application-objects/extended-objects/) 
+
+
+### Benefits
+
+- According to the [Development guidelines](/development-guidelines/overview/) (to have only one extension for object per model), proposed naming will help the developer easily find the existing extensions or customizations for the object.<br/>Thus class-extentions will be aligned with extended class as well as inherited-classes.
 
 Examples:
 
 ```
 Tables\EcoResProduct
 Tables\EcoResProductType_PRJ
-Table Extensions\EcoResProduct
+Table Extensions\EcoResProduct.Extension_PRJ
 
 Classes\SalesFormLetter
 Classes\SalesFormLetter_PRJ_Extension
