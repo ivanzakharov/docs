@@ -130,3 +130,33 @@ classDeclaration TutorialExampleClass_PRJ
 
 }
 ```
+
+## RunBase extensions
+
+_parm_-method must be implemented for each public parameter.
+
+Examples:
+
+```
+class InventABCUpdate extends RunBaseBatch
+{
+    FromDate fromDate;
+    DialogField dialogFromDate;
+    
+    ToDate toDate;
+    DialogField dialogToDate;
+ 
+    public FromDate parmFromDate(FromDate _fromDate = fromDate)
+    {
+        fromDate = _fromDate;
+        return fromDate;
+    }
+    
+    public ToDate parmToDate(ToDate _toDate = toDate)
+    {
+        toDate = _toDate;
+        return toDate;
+    }
+ 
+}
+```
