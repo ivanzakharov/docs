@@ -18,9 +18,9 @@ toc: true
   - Run Job to fill all existing data
   - Deploy field as mandatory  
 
-- It is prohibited to add mandatory field into standard tables. If needed, you should follow these steps:
+- It is prohibited to add mandatory fields into standard tables. If needed, you should follow these steps:
   - Add field (to table-extention)
-  - Add check for field validation on validateWrite() with mandatory .
+  - Add check for field validation on validateWrite() with mandatory switch, enabling additional validation.
 
 Examples:
 
