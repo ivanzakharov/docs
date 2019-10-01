@@ -9,6 +9,67 @@ toc: true
 ---
 
 
+## Updating the records
+
+- Record-related _.selectForUpdate()_ clause should be used only in _find*_ methods.
+
+- It is prohibited to use it either inside the loop or changing behaviour of the non-updating cursor.
+
+Examples (Incorrect):
+
+```
+InventTable inventTable;
+
+ttsBegin;
+while select inventTable
+{
+   inventTable.selectForUpdate(true);
+   inventTable.ItemGroupId = 'DummyGroup';
+   inventTable.update();
+}
+ttsCommit;
+```
+
+```
+InventTable inventTable;
+
+ttsBegin;
+inventTable.selectForUpdate(true);
+while select inventTable
+{
+   inventTable.ItemGroupId = 'DummyGroup';
+   inventTable.update();
+}
+ttsCommit;
+```
+
+Examples (Correct):
+
+```
+InventTable inventTable;
+
+ttsBegin;
+while select forUpdate inventTable
+{
+   inventTable.ItemGroupId = 'DummyGroup';
+   inventTable.update();
+}
+ttsCommit;
+```
+
+```
+InventTable inventTable, inventTableUpd;
+
+while select inventTable
+{
+   ttsBegin;
+   inventTableUpd = InventTable::find(inventTable.ItemId, true);
+   inventTableUpd.ItemGroupId = 'DummyGroup';
+   inventTableUpd.update();
+   ttsCommit;
+}
+```
+
 ## Mandatory fields
 
 - Each mandatory field should be displayed on first or second tab of the form. Usually, it belongs to _Overview_ or _General_ tab of the form.
