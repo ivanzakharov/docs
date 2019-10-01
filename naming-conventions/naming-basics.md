@@ -8,7 +8,7 @@ toc: true
 
 ## Model naming
 
-Customizations should have suffix (referred as <b>_PRJ</b>, or _model acronim_) related with current application model.
+Customizations should have suffix (referred as <b>\_PRJ</b>, or _model acronim_) related with current application model.
 
 It is recommended to have one single model per implementation project.
 
