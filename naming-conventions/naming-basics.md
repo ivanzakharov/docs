@@ -29,8 +29,6 @@ Naming conventions contribute to consistency and to making the application easie
 
   - EDT cannot be with the same name as a Table, Base Enum, or Class.
   
-  - Present naming conventions guarantee to have only one extension for the object (per application model). 
-  
 ## See also
 
 [Name structure](name-structure.md)
