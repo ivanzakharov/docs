@@ -13,10 +13,9 @@ toc: true
 
 - Each mandatory field should be displayed on first or second tab of the form. Usually, it belongs to _Overview_ or _General_ tab of the form.
 
-- If target environment already has some data in the table, mandatory fields should be deployed into that environment in two phases:
-  - Deploy this field as non-mandatory into target environment
-  - Run Job to fill all existing data
-  - Deploy field as mandatory  
+- If target environment already has some data in the table, mandatory fields should be deployed into that environment with two steps:
+  - Deploy field as non-mandatory into target environment. Run Job to fill all existing data.
+  - Deploy field as mandatory.
 
 - It is prohibited to add mandatory fields into standard tables. If needed, you should follow these steps:
   - Add field (to table-extention)
