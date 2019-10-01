@@ -1,10 +1,10 @@
 ---
 layout: docs
 title: 'Development guidelines for RunBase framework'
-group: naming-conventions
-subgroup: application-objects
+group: development-guidelines
+subgroup: frameworks
 redirect_from:
-  - "/naming-conventions/application-objects"
+  - "/development-guidelines/frameworks"
 toc: true
 ---
 
