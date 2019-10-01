@@ -24,6 +24,8 @@ class PurchReqWFExpendiParticipantProvider_PRJ_Extension
 }
 ```
 
+## Event handlers 
+
 For implementing event handlers we should use <b>EventHandler_PRJ</b> suffix, accompanying table name:
 
 ```
