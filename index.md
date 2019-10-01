@@ -3,7 +3,7 @@ layout: docs
 title: Home
 group: home
 redirect_from:
-  - "/"
+  - "/home/"
 toc: true
 ---
 
