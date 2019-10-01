@@ -6,21 +6,27 @@ subgroup: naming-basics
 toc: true
 ---
 
+## Model naming
+
+Customizations should have suffix (referred as <b>_PRJ</b>, or _model acronim_) related with current application model.
+
+It is recommended to have one single model per implementation project.
+
 ## Name structure
 
 Application object names should be constructed hierarchically from four basic components.
 
 For tables:
 
-{business area name} + {business area description} + {type of contents} + _ +{[acronim for model](model-naming.md)}
+{business area name} + {business area description} + {type of contents} + _ + {_model acronim_}
 
 For classes:
 
-{business area name} + {business area description} + {action performed} + _ + {[acronim for model](model-naming.md)}
+{business area name} + {business area description} + {action performed} + _ + {_model acronim_}
 
 For forms:
 
-{business area name} + {business area description} + {type of contents/usability} + _ + {[acronim for model](model-naming.md)}
+{business area name} + {business area description} + {type of contents/usability} + _ + {_model acronim_}
 
 
 Examples:
@@ -56,7 +62,7 @@ Forms\PriceDiscAdministration_PRJ
   - Do not begin a name with "DEL\_" unless it is a table, extended data type or enum, and it is needed for data upgrade purposes. 
 
   - EDT cannot be with the same name as a Table, Base Enum, or Class.
-
+  
 ## Prefixes
 
 ### Subject area object prefix
