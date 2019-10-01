@@ -133,7 +133,7 @@ classDeclaration TutorialExampleClass_PRJ
 
 ## RunBase extensions
 
-_parm_-method must be implemented for each public parameter.
+Mutator method must be implemented for each public parameter in class extension of RunBase*. Use prefix <b>parm</b> followed by full name of variable, as method-name:
 
 Examples:
 
