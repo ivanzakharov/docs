@@ -31,6 +31,11 @@
     - title: Underscores
     - title: Prefixes
     - title: Development project
+- title: Development guidelines
+  pages:
+    - title: Overview
+    - title: Extending rules
+    - title: Mandatory fields
 - title: Examples
   pages: 
     - title: Code execution sequence
