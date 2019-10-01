@@ -19,4 +19,4 @@ toc: true
 
 ## Additional guidelines for application objects
 
-[Tables](tables)
+[Tables](/development-guidelines/tables)
