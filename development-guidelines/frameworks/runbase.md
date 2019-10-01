@@ -23,8 +23,7 @@ ItemId itemId;
 DialogField dialogItemId;
 ```
 
-- The parameter should be extended from any primitive type, except _container_. Using of containers as the parameters is prohibited to use.
-Use _RecordReference_RU_ table to have filter query with specific records.
+- The parameter should be extended from any primitive type, except _container_.<br/> Using of containers as the parameters is prohibited to use.<br/>Use _RecordReference_RU_ table to have filter query with specific records.
 
 - Parameters validation (using _validate()_ method) must be also executed in run() method. 
 
