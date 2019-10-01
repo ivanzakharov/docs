@@ -18,7 +18,7 @@ Also, see naming for [Form datasources](/naming-conventions/ui-artifacts/form-da
 
 To name a handler class that implements the extension of methods of an existing form, use the following principle:
 
-Classes\{FormFullName}<b>Form_PRJ_Extension</b>
+Classes\\{FormFullName}<b>Form_PRJ_Extension</b>
 
 Examples:
 ```
@@ -34,7 +34,7 @@ For creation of class-extension following attribute is used:
 ## Extending the form datasources
 To name a handler class that implements the extension of methods of an existing form datasource, use the following principle:
 
-Classes\{FormFullName}Form_{DatasourceFullName}<b>DS_PRJ_Extension</b>
+Classes\\{FormFullName}Form_{DatasourceFullName}<b>DS_PRJ_Extension</b>
 
 Examples:
 
@@ -52,7 +52,7 @@ For creation of class-extension following attribute is used:
 ### Extending the fields of form datasources
 To name a handler class that implements the extension of the fields methods of an existing form datasource, use the following principle:
 
-Classes\{FormFullName}Form_{DatasourceFullName}DS_{FullDatasourceFieldName}<b>_PRJ_Extension</b>
+Classes\\{FormFullName}Form_{DatasourceFullName}DS_{FullDatasourceFieldName}<b>_PRJ_Extension</b>
 
 Examples:
 
@@ -69,7 +69,7 @@ For creation of class-extension following attribute is used:
 ## Extending the form controls
 To name a handler class that implements the extension of the form controls, use the following principle:
 
-Classes\<FormFullName>Form_<ControlFullName><b>Ctrl_PRJ_Extension</b>
+Classes\\{FormFullName}Form_{ControlFullName}<b>Ctrl_PRJ_Extension</b>
 
 Examples:
 
