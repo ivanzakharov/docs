@@ -93,7 +93,9 @@ _Notes:
 Since the class name is limited to 80 characters, you can shorten the name of the field or data source (but not the form!)._
 
 ## See also
-[Form ]
+[Form datasources](/naming-conventions/ui-artifacts/form-datasources/)
+[Form controls](/naming-conventions/ui-artifacts/form-controls/)
+
 
 ## Alternate way to extending the forms 
 For extending the forms, you may implement override-methods for form controls/datasources/fields.<br>
