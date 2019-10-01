@@ -11,11 +11,11 @@ toc: true
 ## Data entities for new objects
 For new data entities and new related objects (staging table, privileges) it is necessary to adhere to the following rules.
 
-For the original table InventJournalTable_<b>PRJ</b>:<br/>
-DataEntities\InventJournalTableEntity_<b>PRJ</b><br/>
-Tables\InventJournalTableStaging<b>PRJ</b><br/>
-SecurityPrivileges\InventJournalTableEntityMaintain_<b>PRJ</b><br/>
-SecurityPrivileges\InventJournalTableEntityView_<b>PRJ</b><br/>
+For the original table InventJournalTable<b>_PRJ</b>:<br/>
+DataEntities\InventJournalTableEntity<b>_PRJ</b><br/>
+Tables\InventJournalTableStaging<b>_PRJ</b><br/>
+SecurityPrivileges\InventJournalTableEntityMaintain<b>_PRJ</b><br/>
+SecurityPrivileges\InventJournalTableEntityView<b>_PRJ</b><br/>
 
 ## Modifying existing data model
 
