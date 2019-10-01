@@ -1,4 +1,12 @@
 - title: Home
+- title: Development guidelines
+  pages:
+    - title: Overview
+    - title: Extending rules
+    - title: Tables
+    - title: Frameworks 
+      pages:
+        - title: RunBase
 - title: Naming conventions
   pages:
     - title: Overview
@@ -31,14 +39,6 @@
     - title: Underscores
     - title: Prefixes
     - title: Development project
-- title: Development guidelines
-  pages:
-    - title: Overview
-    - title: Extending rules
-    - title: Tables
-    - title: Frameworks 
-      pages:
-        - title: RunBase
 - title: Examples
   pages: 
     - title: Code execution sequence
