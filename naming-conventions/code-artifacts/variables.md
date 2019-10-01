@@ -75,7 +75,7 @@ ecoResProductType_PRJTmp.setTmp();
 ecoResProductType_PRJTmp.checkProductType();
 ```
 
-## RunBase* extensions
+## RunBase extensions
 
 Use prefix <b>dialog</b> for naming variable of dialog form controls (using _DialogField_ class).<br/>
 Use prefix <b>dialogGroup</b> for naming variable of dialog form controls (using _DialogGroup_ class)
