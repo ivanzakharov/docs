@@ -1,5 +1,5 @@
 ---
-layout: docs
+layout: home
 title: Home
 group: home
 redirect_from:
