@@ -125,6 +125,10 @@ Naming conventions contribute to consistency and to making the application easie
   Table Extensions\PurchTable\Fields\PaymClassId_PRJUS
   ```
   
+- Some of the objects in standard _Application Suite_ model are named with suffixes:
+
+  <img src="https://zakharov.com/naming-conventions/naming-conventions1.png" width="585">
+  
 ## Naming conventions
 
 This topic provides naming rules:
