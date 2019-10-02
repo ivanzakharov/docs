@@ -18,7 +18,7 @@ Present naming conventions contribute to consistency and to making the applicati
 
 The naming rule is quite simple and straighforward - to use suffixes instead of prefixes:
 
-- Use suffix <b>_PRJ_Extension</b> (where <b>_PRJ</b> is [model acronym](/naming-conventions/naming-basics)) to name the class extension.
+- Use suffix <b>_PRJ_Extension</b> (where <b>_PRJ</b> is [model acronym](/naming-conventions/naming-basics/#model-naming)) to name the class extension.
 
   Example:
   ```
