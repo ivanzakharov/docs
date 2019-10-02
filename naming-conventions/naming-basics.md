@@ -8,9 +8,17 @@ toc: true
 
 ## Model naming
 
-Customizations should have suffix (referred as <b>\_PRJ</b>, or _model acronim_) related with current application model.
+Any application customization should have [suffix](/naming-conventions/overview/#simple-naming-rule) related with current application model, which is 2-3-character model acronym.
 
-It is recommended to have one single model per implementation project.
+Example:
+
+```
+Tables\PurchTable_VG (project 'Volgagas', model 'Volgagas')
+Classes\SalesFormLetter_KFC (project 'KFC', model 'KFC')
+Forms Extensions\PurchTable_BZN (project 'BI.ZONE', model 'BI.ZONE')
+```
+
+On present site we use model acronym <b>\_PRJ</b> as an example.
 
 ## Name structure
 
@@ -29,7 +37,7 @@ For forms:
 {business area name} + {business area description} + {type of contents/usability} + _ + {[model acronim](#model-naming)}
 
 
-Examples:
+Example:
 
 ```
 Tables\PriceDiscAdmName_PRJ
@@ -71,7 +79,7 @@ A subject area specific application object is prefixed with the name of the subj
 
 Following prefixes should be used in different subject areas:
 
-| Subject area | Prefix | Examples |
+| Subject area | Prefix | Example |
 ---------------|--------|-----------
 | Inventory | Invent* | <b>Invent</b>AccountType_PRJ |
 | Products | EcoResProduct* | <b>EcoResProduct</b>Type_PRJ |
@@ -87,7 +95,7 @@ Following prefixes should be used in different subject areas:
 
 An application area object is prefixed with the name of the application area the object belongs to.
 
-| Subject area | Prefix | Examples |
+| Subject area | Prefix | Example |
 ---------------|--------|-----------
 | System wide feature | Sys*<br/>System* | <b>Sys</b>Environments_PRJ |
 | Workflow | Workflow* | |
