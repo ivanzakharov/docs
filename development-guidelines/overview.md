@@ -18,6 +18,10 @@ toc: true
 
 - When a developer changes someone’s code, or relies on it, then in any case, he takes responsibility for the correct execution of the code.
 
+- Each customization should be checked with another developer for BP. See [Code review](/development-process/code-review/)
+
+- To run something in batch and if it will not be consumed externally (with web-service calls etc.), it is simplier to implement it using the RunBaseBatch framework rather than SysOperations.
+
 
 ## Additional guidelines for application objects
 
