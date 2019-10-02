@@ -117,7 +117,7 @@ Naming conventions contribute to consistency and to making the application easie
   Example (with single _global_ model with models by countries\regions):
 
   ```
-  Table Extensions\PurchTable\Fields\PaymClassId_PRJ (sample model 'Project' with arconim 'PRJ')
+  Table Extensions\PurchTable\Fields\PaymClassId_PRJ (sample model 'Project' with arconym 'PRJ')
   Table Extensions\PurchTable\Fields\IntrastatCode_PRJEU
   Table Extensions\PurchTable\Fields\PaymClassId_PRJAPAC
   Table Extensions\PurchTable\Fields\PaymClassId_PRJUS
