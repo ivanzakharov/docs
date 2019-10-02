@@ -27,6 +27,8 @@ The naming rule is quite simple and straighforward - to use suffixes instead of 
   Classes\SalesFormLetter_PRJ_Extension
   ```
 
+- Use special naming for [Jobs](/naming-conventions/application-objects/jobs-runnable-classes/) to find them by Work Item Id.
+
 - Use suffix <b>_PRJ</b> to name any other application object/element.
 
   Example:
