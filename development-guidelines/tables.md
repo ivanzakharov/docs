@@ -38,8 +38,8 @@ final class PurchTable_PRJ_Extension (added)
     {
         boolean ok = next validateWrite();
     
-        if (VendGroup::find(this.VendGroup).CheckVendorReference_PRJ &&
-            ! this.VendorReferenceTypeId_PRJ)
+        if (! this.VendorReferenceTypeId_PRJ &&
+            VendGroup::find(this.VendGroup).CheckVendorReference_PRJ)
         {
             ok = checkFailed(strFmt("@SYS84378", fieldPName(PurchTable, VendorReferenceTypeId_PRJ)));
         }
