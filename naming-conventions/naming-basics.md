@@ -26,15 +26,15 @@ Application object names should be constructed hierarchically from four basic co
 
 For tables:
 
-{business area name} + {business area description} + {type of contents} + _ + {[model acronim](#model-naming)}
+{business area name} + {business area description} + {type of contents} + _ + {[model acronym](#model-naming)}
 
 For classes:
 
-{business area name} + {business area description} + {action performed} + _ + {[model acronim](#model-naming)}
+{business area name} + {business area description} + {action performed} + _ + {[model acronym](#model-naming)}
 
 For forms:
 
-{business area name} + {business area description} + {type of contents/usability} + _ + {[model acronim](#model-naming)}
+{business area name} + {business area description} + {type of contents/usability} + _ + {[model acronym](#model-naming)}
 
 
 Example:
