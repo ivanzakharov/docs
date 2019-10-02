@@ -131,8 +131,6 @@ This topic provides naming rules:
 
 [Naming basics](/naming-conventions/naming-basics)
 
-[Model naming](/naming-conventions/model-naming)
-
 [Application objects](/naming-conventions/application-objects/overview)
 
 [Code artifacts](/naming-conventions/code-artifacts/overview)
