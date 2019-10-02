@@ -12,7 +12,7 @@ Variables have mixed-case names with a lowercase first letter. The first letter 
 
 Suffix with [model acronym](/naming-conventions/naming-basics/) should remain in variable name.
 
-Examples
+Example:
 
 ```
 
@@ -29,7 +29,8 @@ _true_, _false_, and _null_ are all lowercase.
 
 Primitive types (like _str_, _date_, _int_, _real_, _void_, _boolean_) have lowercase names.
 
-Examples:
+Example:
+
 ```
 ItemId  itemId;
 int     i, k;
@@ -39,7 +40,7 @@ int     i, k;
 ## Table-variable used for record updation
 When using of table-variable especially for updating data record, use <b>Upd</b> suffix.
 
-Examples:
+Example:
 
 ```
 InventTable inventTable;
@@ -50,7 +51,7 @@ InventTable inventTableUpd;
 ## Temporary tables
 Declaration of variable of temporary table type should be same, as table name.
 
-Examples:
+Example:
 
 ```
 TmpBankImport_RU tmpBankImport_RU;
@@ -62,7 +63,7 @@ TmpBudgetBalance tmpBudgetBalance;
 ## Temporary table from persistent table
 Use suffix Tmp
 
-Examples:
+Example:
 
 ```
 InventTable inventTableTmp;
@@ -80,7 +81,7 @@ ecoResProductType_PRJTmp.checkProductType();
 Use prefix <b>dialog</b> for naming variable of dialog form controls (using _DialogField_ class).<br/>
 Use prefix <b>dialogGroup</b> for naming variable of dialog form controls (using _DialogGroup_ class)
 
-Examples:
+Example:
 
 ```
 ItemGroupId itemGroupId;
