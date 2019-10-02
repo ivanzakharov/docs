@@ -23,6 +23,21 @@ toc: true
 - To run something in batch and if it will not be consumed externally (with web-service calls etc.), it is simplier to implement it using the RunBaseBatch framework rather than SysOperations.
 
 
-## Additional guidelines for application objects
+## Guidelines for application objects
 
 [Tables](/development-guidelines/tables)
+
+
+## Guidelines for financial dimensions
+
+- No 'Custom dimensions' allowed for implementation project.<br/>Each using 'Custom dimension' should be replaced with backed entity (with separate setup form) and setup table.
+  See example with [Dimension].
+
+- Each finencial dimension attribute should mapped with 'Dimension attribute type' (base enum) value and therefore used in the code.
+  Dimension attribute type specified at initial setup for each financial dimension (dimension attribute) and can't be changed.
+
+## Guidelines for interfaces
+
+- Only with external codes
+
+- Business\User centric approach
