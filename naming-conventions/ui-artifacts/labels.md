@@ -10,7 +10,7 @@ toc: true
 
 Every user interface text must be defined by using a label.
 
-A new label must be created for each new semantic use per each model.
+A new label must be created for <b>each new semantic use per each model</b>.
 
 A label should have an uppercase first letter and all the other internal words should begins with lowercase. Labels should not end with a period unless they end with three periods, for example: "New…", "Add…". 
 
