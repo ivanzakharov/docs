@@ -10,6 +10,8 @@ toc: true
 
 Variables have mixed-case names with a lowercase first letter. The first letter of each internal word is capitalized. 
 
+Variable must be declared immediately before the variable is used. Thus code amendments will not break changes into two blocks of code - variables declaration and variables using.
+
 Suffix with [model acronym](/naming-conventions/naming-basics/) should remain in variable name.
 
 Example:
