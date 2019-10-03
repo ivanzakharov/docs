@@ -7,15 +7,6 @@
     - title: Frameworks 
       pages:
         - title: RunBase
-- title: Development process
-  pages:
-    - title: Overview
-    - title: Roles
-    - title: Stages 
-      pages:
-        - title: Analysis
-        - title: Design
-        - title: Development
 - title: Naming conventions
   pages:
     - title: Overview
