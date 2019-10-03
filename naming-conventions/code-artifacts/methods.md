@@ -103,16 +103,25 @@ inventTable\validateItemConsumerGroup_PRJ();
 ```
 
 ## Existing methods calling
-Calling of existing methods (including system functions) should use same case as method defined.
+Calling of existing methods (including system functions) should use same casing as method defined.
 
 Follow IntelliSence suggestions in case of doubts.
 
-Examples:
+Example (incorrect):
+
+```
+INFO(Enum2Str(NoYes::NO));
+```
+
+Example (correct):
 
 ```
 info(strLTrim(strRTrim(strFmt("Hello, World"))));
 salesTable.DeliveryDate = dateNull();
+info(enum2Str(NoYes::No))
 ```
+
+
 
 ## Use of Uppercase and Lowercase 
 
