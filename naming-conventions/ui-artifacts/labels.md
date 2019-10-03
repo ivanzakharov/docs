@@ -12,7 +12,7 @@ Every user interface text must be defined by using a label.
 
 A new label must be created for each new semantic use per each model.
 
-A label should have an uppercase first letter and all the other internal words should begins with uowercase. Labels should not end with a period unless they end with three periods, for example: "New…", "Add…". 
+A label should have an uppercase first letter and all the other internal words should begins with lowercase. Labels should not end with a period unless they end with three periods, for example: "New…", "Add…". 
 
 You should not use text constants (for example "%1 - %2") to format labels.
 
