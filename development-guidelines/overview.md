@@ -45,8 +45,17 @@ Sometimes Developers implement solutions that should be reworked from scratch af
 - Each finencial dimension attribute should mapped with 'Dimension attribute type' (base enum) value and therefore used in the code.
   Dimension attribute type specified at initial setup for each financial dimension (dimension attribute) and can't be changed.
 
-## Guidelines for interfaces
+## Interfaces guidelines
 
-- Only with external codes
+- Any interface should use only external codes for each mapped table.
 
-- Business\User centric approach
+Example:
+
+```
+1. Get value '0001200' as ExtProductId from CSV-file or web-request
+2. Get ExtCodeId from interface setup
+3. Use ExtProductId and ExtCodeId to find external code value (int ExtCodeValueTable) related with product (EcoResProduct) record.
+4. Use founded product record to further logic, otherwise display error: Product with external value '%ExtProductId%' for external code '%ExtCodeId%' not found.
+```
+
+- Any interface should execute same logic, that could be reproduced by the user preliminary. 
