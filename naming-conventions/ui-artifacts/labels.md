@@ -10,17 +10,24 @@ toc: true
 
 Every user interface text must be defined by using a label.
 
-A new label must be created for each new semantic use.
-
-Existing labels must be reused. Always try to find a label that expresses the same semantics as the semantics you want to express.
+A new label must be created for each new semantic use per each model.
 
 A label should have an uppercase first letter and all the other internal words should begins with uowercase. Labels should not end with a period unless they end with three periods, for example: "New…", "Add…". 
 
 You should not use text constants (for example "%1 - %2") to format labels.
 
+Existing labels must be reused. Always try to find a label that expresses the same semantics as the semantics you want to express.
+
+To simplify the process of labels creation, follow these steps:
+- Use literals instead of labels during the development
+- Do BP check without label checking and resolve all issues
+- Get latest label file version and check-it out
+- Create necessary labels and do BP check including labels
+- Check-in feature into repository 
+
 ## Languages
 
-Labels should be created for US-English language and also all languages, as well as in all languages of use of the the feature.
+Labels should be created for US-English language and also in all languages of use of the the feature.
 
 Describe the use of the text that is used in the label in US-English in the **Description** field on the **Label editor** form. 
 This is particularly important for shorter labels where the context is not completely clear.
