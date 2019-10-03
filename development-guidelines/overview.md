@@ -22,12 +22,19 @@ toc: true
 
 - To run something in batch and if it will not be consumed externally (with web-service calls etc.), it is simplier to implement it using the RunBaseBatch framework rather than SysOperations.
 
-- Do not use containers as fields. If needed - contact with Technical Architect.
+## Reintenting the wheel
 
+Sometimes Developers implement solutions that should be reworked from scratch after development is finished. To prevent this, following solutions should signal to do additional checking from Technical Architect.
 
-## Guidelines for application objects
+- Using _container_-type fields in tables.
 
-[Tables](/development-guidelines/tables)
+- Using any multi-values types (like _container_, _List_, _Set_, etc.) in RunBase-framework classes.
+
+## Application objects guidelines
+
+[Tables](/development-guidelines/application-objects/tables/)
+
+[Macros](/development-guidelines/application-objects/macros/)
 
 
 ## Guidelines for financial dimensions
