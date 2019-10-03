@@ -28,6 +28,8 @@ Sometimes Developers implement solutions that should be reworked from scratch af
 
 - Using _container_-type fields in tables.
 
+- Storing list of values (separated with comma, etc.) in a single field/variable.
+
 - Using any multi-values types (like _container_, _List_, _Set_, etc.) in RunBase-framework classes.
 
 ## Application objects guidelines
@@ -37,12 +39,12 @@ Sometimes Developers implement solutions that should be reworked from scratch af
 [Macros](/development-guidelines/application-objects/macros/)
 
 
-## Guidelines for financial dimensions
+## Financial dimensions
 
 - No 'Custom dimensions' allowed for implementation project.<br/>Each using 'Custom dimension' should be replaced with backed entity (with separate setup form) and setup table.
   See example with [Dimension].
 
-- Each finencial dimension attribute should mapped with 'Dimension attribute type' (base enum) value and therefore used in the code.
+- Each financial dimension attribute should mapped with 'Dimension attribute type' (base enum) value and therefore used in the code.
   Dimension attribute type specified at initial setup for each financial dimension (dimension attribute) and can't be changed.
 
 ## Interfaces guidelines
