@@ -3,7 +3,10 @@
   pages:
     - title: Overview
     - title: Extending rules
-    - title: Tables
+    - title: Application objects
+      pages:
+        - title: Tables
+        - title: Macros
     - title: Frameworks 
       pages:
         - title: RunBase
