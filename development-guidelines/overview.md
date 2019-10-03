@@ -22,6 +22,8 @@ toc: true
 
 - To run something in batch and if it will not be consumed externally (with web-service calls etc.), it is simplier to implement it using the RunBaseBatch framework rather than SysOperations.
 
+- Do not use containers as fields. If needed - contact with Technical Architect.
+
 
 ## Guidelines for application objects
 
