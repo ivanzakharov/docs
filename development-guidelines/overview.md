@@ -61,3 +61,5 @@ Example:
 ```
 
 - Any interface should execute same logic, that could be reproduced by the user preliminary. 
+
+- Using standard or existing frameworks (_Data Management_ etc.) is in priority.
