@@ -48,10 +48,49 @@ Sometimes Developers implement solutions that should be reworked from scratch af
 
 - Each financial dimension attribute should mapped with 'Dimension attribute type' (base enum) value and therefore used in the code.
   Dimension attribute type specified at initial setup for each financial dimension (dimension attribute) and can't be changed.
+  
+## UI guidelines
 
-## Interfaces guidelines
+### Filtering and sorting
 
-- Any interface should use only external codes for each mapped table.
+- By default, each field on the form should be available for filtering and sorting (if there is no explicit requrement to make it using _display_- or _edit_-methods)
+
+- Unavailability of filtering/sorting for added field should be approved with Consultant.
+
+### Column widths
+
+- For any table/grid column should be able to change the width
+
+### Fields moving
+
+- For all fields in the tabular part of the form, the operation of moving to another place (changing the order of columns) should be available.
+
+### Size/form position
+
+- No operations that are directly related to changing the size and position of the forms should not change the size and position of the form.
+
+- Form controls that allow their sizes to be changed must scale when the sizes of the forms change.
+
+### Viewing details
+
+- All fields with Foreigh Keys must allow to _View details_ (go to main table).
+
+### Confirmation of irreversible actions
+
+- Before performing all irreversible actions, it is required to ask the user for confirmation in the dialog.</br>By default, the dialog should focus on the button that does not lead to irreversible actions.
+
+### Interaction with user
+
+- Any function of the should lead to some result. The result can be an any message of change in the interface (for example, opening a form). 
+
+- It is forbidden to have any interaction with user, requires his answer, within the transaction.
+
+- You should not use a chain of dialogs from several windows to confirm the action. If it is necessary to branch the algorithm, the choice of the branch of the algorithm should be indicated in the initial dialog box.
+
+
+## External interfaces guidelines
+
+- Any external interface should use only external codes for each mapped table.
 
 Example:
 
@@ -62,8 +101,8 @@ Example:
 4. Use founded product record to further logic, otherwise display error: Product with external value '%ExtProductId%' for external code '%ExtCodeId%' not found.
 ```
 
-- Any interface should execute same logic, that could be reproduced by the user preliminary. 
+- Any external interface should execute same logic, that could be reproduced by the user preliminary. 
  
-  - Thus, no interface can auto-create setup or masterdata to complete. All setup must be done before running the interface.
+  - Thus, no external interface can auto-create setup or masterdata to complete. All setup must be done before running the interface.
 
 - Using standard or existing frameworks (_Data Management_ etc.) is in priority.
