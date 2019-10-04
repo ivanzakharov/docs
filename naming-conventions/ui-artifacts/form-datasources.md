@@ -25,7 +25,3 @@ Datasource name for temporary table should be same as table name.
 Tables\TmpEcoResCategoryImport_PRJ
 Forms\EcoResCategoryImportForm_PRJ\Datasources\TmpEcoResCategoryImport_PRJ
 ```
-
-## Form controls naming
-
-All added form controls should have <b>_PRJ</b> suffix.
