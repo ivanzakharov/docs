@@ -8,6 +8,10 @@ redirect_from:
 toc: true
 ---
 
+## Table properties
+
+- Always define Primary and Cluster indexes.
+
 ## Fields
 
 - Visible field should always be the part of field group (at least one)
@@ -29,9 +33,7 @@ toc: true
 
 ## Indexes
 
-- Always define Primary and Cluster indexes.
-
-- Maximum column count in customized index is limited to 3 (three). If more needed, BP Rule exception should me introduced.   
+- Maximum column count in customized index is limited to 3 (three). If more needed, BP Rule exception should be introduced anc checked by Code Reviewer or Technical Architect afterwards. 
 [TODO - Make BP with limiting index field count](todo.md)
 
 ## Mandatory fields
