@@ -8,6 +8,17 @@ redirect_from:
 toc: true
 ---
 
+## Fields
+
+- Visible field should always be the part of field group (at least one)
+
+### Field data type
+
+- Always set field data type as EDT or Base enum.
+
+- For field which is Foreing Key, use same data type, as used in Primary key of related table.
+
+- For _RecId_ and _TableId_ data stored in the field, use Extended Data Types _RefRecId_ and _RefTableId_ respectively. 
 
 ## Renaming the keys
 
@@ -16,6 +27,12 @@ toc: true
 ## Relations
 
 
+## Indexes
+
+- Always define Primary and Cluster indexes.
+
+- Maximum column count in customized index is limited to 3 (three). If more needed, BP Rule exception should me introduced.   
+[TODO - Make BP with limiting index field count](todo.md)
 
 ## Mandatory fields
 
