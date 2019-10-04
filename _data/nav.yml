@@ -40,6 +40,8 @@
     - title: Underscores
     - title: Prefixes
     - title: Development project
+    - title: Deployment package
 - title: Examples
   pages: 
     - title: Code execution sequence
+    - title: Dead code
