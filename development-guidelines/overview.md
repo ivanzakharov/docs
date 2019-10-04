@@ -49,6 +49,15 @@ Sometimes Developers implement solutions that should be reworked from scratch af
 - Each financial dimension attribute should mapped with 'Dimension attribute type' (base enum) value and therefore used in the code.
   Dimension attribute type specified at initial setup for each financial dimension (dimension attribute) and can't be changed.
   
+  
+## Comments
+
+- As history of object changes are storen in source control version, there is no strict rule to mark added code with additional comments (containing Work Item Id, Work Item name, Date and Developer alias).
+
+- It is prohibited to leave commented/not-executed code (also previous version of the code).
+
+- Developer could add comments that clarify code execution.
+  
 ## UI guidelines
 
 ### Filtering and sorting
