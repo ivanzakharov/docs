@@ -63,6 +63,10 @@ Use the following preferred names for methods:
 <td><p>Methods used for setting and getting the value of a member variable as a part of an object initialization. The method should have the same name as the variable, prefixed with parm.</p></td>
 </tr>
 <tr class="odd">
+<td><p>get*</p></td>
+<td><p>Used for methods that get value(s) from the object. The name must make it clear that the method also gets the state of some other global members.</p></td>
+</tr>
+<tr class="odd">
 <td><p>set*</p></td>
 <td><p>Used for methods that set value(s) in the object. The name must make it clear that the method also sets the state of some other global members. set* methods should be void or Boolean, signaling the result of the set.</p></td>
 </tr>
