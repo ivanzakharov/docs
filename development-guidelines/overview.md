@@ -81,6 +81,8 @@ Sometimes Developers implement solutions that should be reworked from scratch af
 
 ### Interaction with user
 
+- No basic UI functionality (filtering, sorting, exporting to Excel etc.) can be limited with new customization/extension.
+
 - Any function of the should lead to some result. The result can be an any message of change in the interface (for example, opening a form). 
 
 - It is forbidden to have any interaction with user, requires his answer, within the transaction.
