@@ -8,22 +8,24 @@ redirect_from:
 toc: true
 ---
 
-Every user interface text must be defined by using a label.
+- Every user interface text must be defined by using a label.
 
-A new label must be created for <b>each new semantic use per each model</b>.
+- With using of label in the code, leave exact label text in the comments
 
-A label should have an uppercase first letter and all the other internal words should begins with lowercase. Labels should not end with a period unless they end with three periods, for example: "New…", "Add…". 
+- A new label must be created for <b>each new semantic use per each model</b>.
 
-You should not use text constants (for example "%1 - %2") to format labels.
+- A label should have an uppercase first letter and all the other internal words should begins with lowercase. Labels should not end with a period unless they end with three periods, for example: "New…", "Add…". 
 
-Existing labels must be reused. Always try to find a label that expresses the same semantics as the semantics you want to express.
+- You should not use text constants (for example "%1 - %2") to format labels.
 
-To simplify the process of labels creation, follow these steps:
-- Use literals instead of labels during the development
-- Do BP check without label checking and resolve all issues
-- Get latest label file version and check-it out
-- Create necessary labels and do BP check including labels
-- Check-in feature into repository 
+- Existing labels of the same model must be reused. Always try to find a label that expresses the same semantics as the semantics you want to express.
+
+- To simplify the process of labels creation, follow these steps:
+  - Use literals instead of labels during the development
+  - Do BP check without label checking and resolve all issues
+  - Get latest label file version and check-it out
+  - Create necessary labels and do BP check including labels
+  - Check-in feature into repository 
 
 ## Languages
 
