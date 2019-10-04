@@ -12,12 +12,23 @@ toc: true
 Fields on table extensions should be named with suffix <b>_PRJ</b><br/>
 Fields on new tables are created without suffix.
 
-Examples:
+Example:
 
 ```
-TableExtensions\CategoryTable.Extension_PRJ\FIelds\CategoryGroupId_PRJ
-TableExtensions\InventTable.Extension_PRJ\FIelds\ItemConsumerGroup_PRJ
+Table Extensions\CategoryTable.Extension_PRJ\FIelds\CategoryGroupId_PRJ
+Table Extensions\InventTable.Extension_PRJ\FIelds\ItemConsumerGroup_PRJ
 Tables\ItemCategoryList_PRJ\Fields\ItemCategoryListId
+```
+
+## Indexes
+Indexes on added tables should be named with <b>Idx</b> suffix.<br/>
+For indexes on table extension - use suffix <b>Idx_PRJ</b>.
+
+Example:
+
+```
+Tables\ItemCategoryList_PRJ\Indexes\ItemCategoryListIdIdx
+Table Extensions\InventTable.Extension_PRJ\Indexes\ItemConsumerGroupIdx_PRJ
 ```
 
 ## Methods 
