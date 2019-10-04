@@ -9,6 +9,12 @@ toc: true
 ---
 
 
+## Renaming the keys
+
+- New customization should not affect to standard renaming primary key functionality. With adding new fields, that are Foreign Keys, neet to make sure that there is proper relation with Primary Key. 
+
+## Relations
+
 
 
 ## Mandatory fields
