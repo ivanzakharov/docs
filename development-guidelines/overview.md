@@ -16,7 +16,7 @@ toc: true
 
 - Do not have several developers on same one-box. Otherwise, you may face issues with source code controlling in Visual Studio.
 
-- When a developer changes someone’s code, or relies on it, then in any case, he takes responsibility for the correct execution of the code.
+- When a developer changes someone’s code, or relies on it in own code, then, in any case, he takes responsibility for the correct execution of the code.
 
 - No basic/standard functionality can be limited with new customization/extension.
 
