@@ -54,11 +54,11 @@ Sometimes Developers implement solutions that should be reworked from scratch af
   
 ## Comments
 
-- As history of object changes are storen in source control version, there is no strict rule to mark added code with additional comments (containing Work Item Id, Work Item name, Date and Developer alias).
+- As history of object changes is stored in source control system (repository), thus there is no strict rule to mark added code with additional comments (containing Work Item Id, Work Item name, Date and Developer alias etc.).
 
-- It is prohibited to leave commented/not-executed code (also previous version of the code).
+- It is prohibited to leave commented/not-executed code as well as previous version of the code.
 
-- Developer could add comments that clarify code execution.
+- Developer could add comments which clarify code execution.
   
 ## UI guidelines
 
