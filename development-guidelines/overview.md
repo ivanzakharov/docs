@@ -20,6 +20,8 @@ toc: true
 
 - No basic/standard functionality can be limited with new customization/extension.
 
+- Each extension/customization should be enframed with condition for checking if the new feature is enabled.
+
 - Each customization should be checked with another developer for BP. See [Code review](/development-process/code-review/)
 
 - To run something in batch and if it will not be consumed externally (with web-service calls etc.), it is simplier to implement it using the RunBaseBatch framework rather than SysOperations.
