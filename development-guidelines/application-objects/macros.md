@@ -8,7 +8,7 @@ redirect_from:
 toc: true
 ---
 
-- Creating of macro is prohibited, use public variable with constant value.
+- Creating of Macro objects is prohibited, create specific class with public variables with constant values.
 
   Example:
 
@@ -29,7 +29,7 @@ toc: true
 
   ```
 
-- No excessive macro/constants using
+- No excessive macro/constants using in the code
 
   Example (incorrect):
   
@@ -69,8 +69,8 @@ toc: true
   ```
   ...
   container c = file.read();
-  str s1 = conpeek(1); // no macro use
-  str s2 = conpeek(2); // no macro use
-  int i = any2num(substr(s1, 2, 10)); // no macro use
+  str s1 = conpeek(1); // no macro use to get first value
+  str s2 = conpeek(2); // no macro use to get second value
+  int i = any2num(substr(s1, 2, 10)); // no macro use for data transformation
   ...
   ```
