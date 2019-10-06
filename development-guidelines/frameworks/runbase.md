@@ -14,14 +14,20 @@ Following rules are dedicated for implementing handlers using the RunBase-framew
 
 - The parameter must be accompanied by a _parm_-method.
 
-- The parameter must be accompanied by a displayed field. This will allow for user to see all running parameters in the Batch task form.
+- The parameter must be accompanied by a displayed field. 
 
-Examples:
+Example:
 
 ```
 ItemId itemId;
 DialogField dialogItemId;
 ```
+
+- All parameters should be displayed on the dialog form. This will allow for user to see all running parameters in the Batch task form.
+
+Example (incorrect):
+
+[None of parameters are displaying - wrong use](runbase1.png)
 
 - The parameter should be extended from any primitive type, except _container_.<br/> Using of containers as the parameters is prohibited to use.<br/>Use _RecordReference_RU_ table to have filter query with specific records, after extending it with needed _Country Region Codes_.
 
