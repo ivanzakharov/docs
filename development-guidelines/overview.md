@@ -34,7 +34,7 @@ Sometimes Developers implement solutions that should be reworked from scratch af
 
 - Storing list of values (separated with comma, etc.) in a single field/variable.
 
-- Using any multi-values types (like _container_, _List_, _Set_, etc.) in RunBase-framework classes.
+- Using any multi-value parameters (like _container_, _List_, _Set_, etc.) in RunBase-framework classes.
 
 ## Application objects guidelines
 
@@ -45,12 +45,10 @@ Sometimes Developers implement solutions that should be reworked from scratch af
 
 ## Financial dimensions
 
-- No 'Custom dimensions' allowed for implementation project.<br/>Each using 'Custom dimension' should be replaced with backed entity (with separate setup form) and setup table.
-  See example with [Dimension].
+- No 'Custom dimensions' allowed for implementation project.<br/>Each financial dimension should be implemented with own table (backed entity) and separate setup form.
 
 - Each financial dimension attribute should mapped with 'Dimension attribute type' (base enum) value and therefore used in the code.
-  Dimension attribute type specified at initial setup for each financial dimension (dimension attribute) and can't be changed.
-  
+  Dimension attribute type is specified at creation of finencial dimension (_Dimension attribute_ table) and can't be changed.
   
 ## Comments
 
