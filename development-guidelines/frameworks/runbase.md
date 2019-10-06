@@ -27,7 +27,7 @@ Following rules are dedicated for implementing handlers using the RunBase-framew
 
   Example (incorrect as none of parameters are displayed):
 
-  <img src="https://zakharov.com/development-guidelines/frameworks/runbase1.png" width="1875">
+  <img src="https://zakharov.com/development-guidelines/frameworks/runbase1.png" width="938">
 
 - The parameter should be extended from any primitive type, except _container_.<br/> Using of containers as the parameters is prohibited to use.<br/>Use _RecordReference_RU_ table to have filter query with specific records, after extending it with needed _Country Region Codes_.
 
