@@ -31,12 +31,23 @@ _true_, _false_, and _null_ are all lowercase.
 
 Primitive types (like _str_, _date_, _int_, _real_, _void_, _boolean_) have lowercase names.
 
-Example:
+Example (incorrect):
+
+```
+Purchtable – NOOOO
+purchTable.VENDAccount – NO
+```
+
+Example (correct):
 
 ```
 ItemId  itemId;
 int     i, k;
+PurchTable purchTable;
+purchTable = PurchTable::find('PO0123', true);
+purchTable.VendGroup = 'SVC';
 ```
+
 
 
 ## Table-variable used for record updation
