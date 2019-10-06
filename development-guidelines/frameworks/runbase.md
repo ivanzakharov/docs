@@ -23,7 +23,7 @@ Following rules are dedicated for implementing handlers using the RunBase-framew
   DialogField dialogItemId;
   ```
 
-- All parameters should be displayed on the dialog form. This will allow for user to see all running parameters in the Batch task form.
+- All parameters should be displayed on the dialog form thus this will allow for users to see all inputs for processing batch task.
 
   Example (incorrect as none of parameters are displayed):
 
