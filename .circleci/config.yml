@@ -18,6 +18,7 @@ jobs:
           command: |
             now=$(date "+%d/%m/%y %H")
             update=.circleci/update.log
+            echo $now
             if grep -q "$now" $update; then
               echo "Skipping update"
             else
