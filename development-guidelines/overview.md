@@ -179,7 +179,7 @@ Sometimes Developers implement solutions that should be reworked from scratch af
   }
   ```
   
-  Example:
+  Example (with flexible setup on custom setup table):
   
   ```
   class TutorialEnumBranching
