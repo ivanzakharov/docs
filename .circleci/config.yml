@@ -19,8 +19,10 @@ jobs:
             now=$(date "+%d/%m/%y %H")
             update=.circleci/update.log
             if grep -q "$now" $update; then
+              echo "Skipping update"
+            else
               echo "$now" >> "$update"
+              git commit -m 'Docs update'
+              git push origin build
+              git add .
             fi
-      - run: git add .
-      - run: git commit -m 'Docs update'
-      - run: git push origin build
