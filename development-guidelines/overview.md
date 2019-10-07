@@ -30,7 +30,7 @@ toc: true
 
 ## Reintenting the wheel / Red line crossing
 
-Sometimes Developers implement solutions that should be reworked from scratch after development is finished. To prevent this, following solutions should signal to do additional checking from Technical Architect.
+Sometimes Developers implement solutions that should be reworked from scratch after development is finished. To prevent this, following solutions should signal to Technical Architect to do additional task review.
 
 - Using _container_-type fields in tables.
 
