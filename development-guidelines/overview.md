@@ -277,6 +277,12 @@ Sometimes Developers implement solutions that should be reworked from scratch af
 
 - You should not use a chain of dialogs from several windows to confirm the action. If it is necessary to branch the algorithm, the choice of the branch of the algorithm should be indicated in the initial dialog box.
 
+## Performance related topics
+
+- Any using of _notexists join_ should be approved by Technical Architect.
+
+- Creation of new temporary tables (either _InMemory_ or _TempDB_) or using persistent table as temporary (using _.setTmp()_ clause) should be approved with Technical Architect.
+
 
 ## Integration guidelines
 
