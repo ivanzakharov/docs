@@ -14,6 +14,14 @@ jobs:
       - run: git remote add origin git@github.com:ivanzakharov/ivanzakharov.github.io.git
       - run: git pull origin build
       - run: git checkout build
+      - run:
+          command: |
+            if grep -q $now update.log; then
+              echo "eksctl is already installed"
+              exit 0
+            then
+              $now >> update.log
+            fi
       - run: date "+%d/%m/%y %H:%M" >> .circleci/update.log
       - run: git add .
       - run: git commit -m 'Docs update'
