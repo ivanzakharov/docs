@@ -287,8 +287,8 @@ Example:
 ```
 1. Get value '0001200' as ExtProductId from CSV-file or web-request
 2. Get ExtCodeId from interface setup
-3. Use ExtProductId and ExtCodeId to find external code value (int ExtCodeValueTable) related with product (EcoResProduct) record.
-4. Use founded product record to further logic, otherwise display error: Product with external value '%ExtProductId%' for external code '%ExtCodeId%' not found.
+3. Use ExtProductId and ExtCodeId to find external code value (in ExtCodeValueTable table) related with product (EcoResProduct table) record.
+4. Use founded product record in further logic, otherwise display error: Product with external value '%ExtProductId%' for external code '%ExtCodeId%' not found.
 ```
 
 - Any integration flow should execute the only logic, that can be reproduced by the user manually.
