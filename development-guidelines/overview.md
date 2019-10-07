@@ -99,9 +99,9 @@ Sometimes Developers implement solutions that should be reworked from scratch af
 - You should not use a chain of dialogs from several windows to confirm the action. If it is necessary to branch the algorithm, the choice of the branch of the algorithm should be indicated in the initial dialog box.
 
 
-## External interfaces guidelines
+## Integration guidelines
 
-- Any external interface should use only external codes for each mapped table.
+- Any integration flow (external interface) should use only external codes for each mapped table of Dynamics 365.
 
 Example:
 
@@ -112,8 +112,8 @@ Example:
 4. Use founded product record to further logic, otherwise display error: Product with external value '%ExtProductId%' for external code '%ExtCodeId%' not found.
 ```
 
-- Any external interface should execute same logic, that could be reproduced by the user preliminary. 
+- Any integration flow should execute the only logic, that can be reproduced by the user manually.
  
-  - Thus, no external interface can auto-create setup or masterdata to complete. All setup must be done before running the interface.
+- No inbound interface (integration flow) can auto-create setup or masterdata to its proper processing.<br/>All setup must be done before running the interface that could rely on proper setup maded.
 
-- Using standard or existing frameworks (_Data Management_ etc.) is in priority.
+- Using standard or existing frameworks (_Data Management_ etc.) is the main priority.
