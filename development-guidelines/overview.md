@@ -77,6 +77,61 @@ Sometimes Developers implement solutions that should be reworked from scratch af
 - It is prohibited to leave commented/not-executed code as well as previous version of the code.
 
 - Developer could add comments which clarify code execution.
+
+## Code
+
+- Use global (class-level) variables ONLY when it is strongly needed. Well-formed code has no need to use global variables except of interacting with another objects (via mutators-methods).
+
+  Example (incorrect):
+  
+  ```
+  class TutorialGlobalVariables
+  {
+      SalesTable salesTable;
+  
+      protected void processSalesTable()
+      {
+         salesTable.DeliveryDate = datenull();
+         salesTable.update();
+      }
+  
+      void run()
+      {
+          ttsBegin;
+          while select forupdate salesTable
+          {
+              this.processSalesTable();
+          }
+          ttsCommit;
+      }
+  
+  }
+  ```
+  
+  Example (correct):
+  
+  ```
+  class TutorialGlobalVariables
+  {
+      protected void processSalesTable(SalesTable _salesTable)
+      {
+         _salesTable.DeliveryDate = datenull();
+         _salesTable.update();
+      }
+  
+      void run()
+      {
+          SalesTable salesTable;
+          
+          ttsBegin;
+          while select forupdate salesTable
+          {
+              this.processSalesTable(salesTable);
+          }
+          ttsCommit;
+      }
+  }
+  ```
   
 ## UI guidelines
 
