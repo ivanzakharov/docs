@@ -20,7 +20,7 @@ jobs:
             if grep -q "$now" .circleci/update.log; then
               echo "$now" >> ".circleci/update.log"
             fi
-            echo $now
+            cat .circleci/update.log
       - run: git add .
       - run: git commit -m 'Docs update'
       - run: git push origin build
