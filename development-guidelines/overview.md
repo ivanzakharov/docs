@@ -10,7 +10,7 @@ toc: true
 
 ## Basic guidelines
 
-- To have only one model per implementation project. This will save you from unnecessary problems with model compatibility and dependencies in between.
+- To have only one model per implementation project. This will save you from possible issues with model compatibility and dependencies in between.
 
 - To have only one extension per application object. This will allow the developer to see and understand all customizations of the object.
 
