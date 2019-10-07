@@ -48,24 +48,27 @@ Sometimes Developers implement solutions that should be reworked from scratch af
 
 - No 'Custom dimensions' allowed for implementation project.<br/>Each financial dimension should be implemented with own table (called _backing entity_) and separate setup form.
 
-- Do not address to financial dimension (dimension attribute) by name.
+- Do not address to financial dimension (dimension attribute) by name (with hardcoding its name).
   
-  The solution is:
+  The possible solution is:
   
-  - Add base enum _Dimension attribute type_ with values starting from 0 (None) and continued with needed values.
+  - Add base enum _Dimension attribute type_ with values starting from 0 (None) and continue with required values.
   
     Example:
     
-    0 - None
-    1 - Department
-    2 - Cost center
-    3 - Purpose
+    0 - None<br/>
+    1 - Department<br/>
+    2 - Cost center<br/>
+    3 - Purpose<br/>
     
-  - Extend financial dimensions (_DimensionAttribute_ table) with _Dimension attribute type_ field (base enum _DimensionAttributeType_PRJ_).
+  - Extend financial dimensions (_DimensionAttribute_ table) with _Dimension attribute type_ field.
   
-  - Set dimension attribute type for each existing financial dimension in the Financial fimension form.
+  - Set _Dimension attribute type_ for each existing financial dimension in the _Financial dimension_ form.
   
-  - Use base enum _DimensionAttributeType_PRJ_ to find needed dimension attribute in the code or in table relations to limit dimension values.
+  - Use base enum  _Dimension attribute type_ to:
+  
+    - find needed dimension attribute in the code by type <br/>
+    - use in table relations for limiting dimension attribute values.
   
 ## Comments
 
