@@ -41,6 +41,10 @@
     - title: Prefixes
     - title: Development project
     - title: Deployment package
+- title: Development process
+  pages: 
+    - title: Overview
+    - title: Devbox maintenance
 - title: Examples
   pages: 
     - title: Code execution sequence
