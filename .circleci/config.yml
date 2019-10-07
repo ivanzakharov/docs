@@ -16,7 +16,7 @@ jobs:
       - run: git checkout build
       - run:
           command: |
-            if grep -q $now update.log; then
+            if grep -q "$now" update.log; then
               $now > update.log
             fi
       - run: git add .
