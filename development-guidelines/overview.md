@@ -137,7 +137,7 @@ Sometimes Developers implement solutions that should be reworked from scratch af
   
 - It is not necessary to have additional variable to ogranize parameter or master setup record _caching_. Trust to table-wise or record-wise caching on server side (CacheLookup=Found,EntireTable etc.).
 
-  Example (skip:
+  Example:
   
   ```
   class TutorialSkippingVariables
@@ -146,20 +146,16 @@ Sometimes Developers implement solutions that should be reworked from scratch af
       {
           SalesTable salesTable;
           
-          while select salesTable
+          ttsBegin;
+          while select forupdate salesTable
           {
-              if (conlen(salesTable.totalWeightAndVolume()) > 0 &&
-                  salesTable
-                  SalesParameters::find().Reservation == ItemReservation::Automatic)
+              if (conlen(salesTable.totalWeightAndVolume()))
               {
-                  ttsBegin;
-          
-                  salesTable = InventParameters::find();
+                  salesTable.Reservation = SalesParameters::find().Reservation;
                   salesTable.update();
-                  
-                  ttsCommit;
               }
           }
+          ttsCommit;
       }
   }
   ```
