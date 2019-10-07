@@ -26,7 +26,7 @@ toc: true
 
 - To run something in batch and if it will not be consumed externally (with web-service calls etc.), it is simplier to implement it using the RunBaseBatch framework rather than SysOperations.
 
-## Reintenting the wheel
+## Reintenting the wheel / Red line crossing
 
 Sometimes Developers implement solutions that should be reworked from scratch after development is finished. To prevent this, following solutions should signal to do additional checking from Technical Architect.
 
@@ -35,6 +35,8 @@ Sometimes Developers implement solutions that should be reworked from scratch af
 - Storing list of values (separated with comma, etc.) in a single field/variable.
 
 - Using any multi-value parameters (like _container_, _List_, _Set_, etc.) in RunBase-framework classes.
+
+- Addressing to financial dimension by name
 
 ## Application objects guidelines
 
