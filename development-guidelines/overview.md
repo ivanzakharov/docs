@@ -42,13 +42,28 @@ Sometimes Developers implement solutions that should be reworked from scratch af
 
 [Macros](/development-guidelines/application-objects/macros/)
 
-
 ## Financial dimensions
 
-- No 'Custom dimensions' allowed for implementation project.<br/>Each financial dimension should be implemented with own table (backed entity) and separate setup form.
+- No 'Custom dimensions' allowed for implementation project.<br/>Each financial dimension should be implemented with own table (called _backing entity_) and separate setup form.
 
-- Each financial dimension attribute should mapped with 'Dimension attribute type' (base enum) value and therefore used in the code.
-  Dimension attribute type is specified at creation of finencial dimension (_Dimension attribute_ table) and can't be changed.
+- Do not address to financial dimension (dimension attribute) by name.
+  
+  The solution is:
+  
+  - Add base enum _Dimension attribute type_ with values starting from 0 (None) and continued with needed values.
+  
+    Example:
+    
+    0 - None
+    1 - Department
+    2 - Cost center
+    3 - Purpose
+    
+  - Extend financial dimensions (_DimensionAttribute_ table) with _Dimension attribute type_ field (base enum _DimensionAttributeType_PRJ_).
+  
+  - Set dimension attribute type for each existing financial dimension in the Financial fimension form.
+  
+  - Use base enum _DimensionAttributeType_PRJ_ to find needed dimension attribute in the code or in table relations to limit dimension values.
   
 ## Comments
 
