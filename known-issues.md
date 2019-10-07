@@ -1,9 +1,7 @@
 ---
 layout: docs
 title: 'Known issues'
-group: home
-redirect_from:
-  - "/home/"
+group: known-issues
 toc: true
 ---
 
