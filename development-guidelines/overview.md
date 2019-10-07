@@ -160,6 +160,42 @@ Sometimes Developers implement solutions that should be reworked from scratch af
   }
   ```
   
+  - Avoid to use custom enums in conditions (_if_, _switch_, etc.) to have algorithm branching. Use business-centric terms instead. Compare two following example.
+  
+  Example (incorrect with hard-coded business logic):
+  
+  ```
+  class TutorialEnumBranching
+  {
+      void run()
+      {
+          ...
+          
+          if (salesLine.inventTable().MainProductType_PRJ == MainProductType_PRJ::Item)
+          {
+              // do reservation
+          }
+      }
+  }
+  ```
+  
+  Example:
+  
+  ```
+  class TutorialEnumBranching
+  {
+      void run()
+      {
+          ...
+          
+          if (MainProductType_PRJ::find(salesLine.inventTable().MainProductType_PRJ).ItemReservation == ItemReservation::Automatic)
+          {
+              // do reservation
+          }
+      }
+  }
+  ```
+  
 ## UI guidelines
 
 ### Filtering and sorting
