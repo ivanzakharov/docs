@@ -22,7 +22,7 @@ jobs:
               echo "Skipping update"
             else
               echo "$now" >> "$update"
+              git add .
               git commit -m 'Docs update'
               git push origin build
-              git add .
             fi
