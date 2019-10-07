@@ -196,6 +196,47 @@ Sometimes Developers implement solutions that should be reworked from scratch af
   }
   ```
   
+- Use positive logic for condition checking and for extended fields.<br/>Use Jobs to update existing data and _initValue()_ method for proper initialization of field values. Compare two following examples.
+
+  Example (incorrect):
+  
+  ```
+  Tables\SalesTable.Extension_PRJ\Fields\SkipPackingSlip
+  
+  class SalesFormLetter_PackingSlip
+  {
+      void run()
+      {
+          if (salesTable.SkipPackingSlip)
+          {
+              return;
+          }
+          ...
+          // do packing slip processing
+      }
+  }
+  ```
+  
+  Example (correct):
+  
+  ```
+  Tables\SalesTable.Extension_PRJ\Fields\ProcessPackingSlip
+  
+  class SalesFormLetter_PackingSlip
+  {
+      void run()
+      {
+          if (! salesTable.ProcessPackingSlip)
+          {
+              return;
+          }
+          ...
+          // do packing slip processing
+      }
+  }
+  ```
+
+  
 ## UI guidelines
 
 ### Filtering and sorting
