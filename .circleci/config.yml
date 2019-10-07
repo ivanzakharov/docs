@@ -21,7 +21,7 @@ jobs:
             if grep -q "$now" $update; then
               echo "$now" >> "$update"
             fi
-            cat .circleci/update.log
+            cat $update
             echo $now
             echo $update
       - run: git add .
