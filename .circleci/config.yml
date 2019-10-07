@@ -19,9 +19,8 @@ jobs:
             if grep -q $now update.log
               exit 0
             then
-              $now >> update.log
+              $now > update.log
             fi
-      - run: date "+%d/%m/%y %H:%M" >> .circleci/update.log
       - run: git add .
       - run: git commit -m 'Docs update'
       - run: git push origin build
