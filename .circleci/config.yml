@@ -18,7 +18,7 @@ jobs:
           command: |
             now=$(date "+%d/%m/%y %H")
             if grep -q "$now" .circleci/update.log; then
-              $now >> .circleci/update.log
+              echo "$now" >> .circleci/update.log
             fi
             echo $now
       - run: git add .
