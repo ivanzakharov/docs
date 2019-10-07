@@ -17,13 +17,10 @@ jobs:
       - run:
           command: |
             now=$(date "+%d/%m/%y %H")
-            update=".circleci/update.log"
+            update=.circleci/update.log
             if grep -q "$now" $update; then
               echo "$now" >> "$update"
             fi
-            cat $update
-            echo $now
-            echo $update
       - run: git add .
       - run: git commit -m 'Docs update'
       - run: git push origin build
