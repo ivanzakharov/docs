@@ -16,8 +16,7 @@ jobs:
       - run: git checkout build
       - run:
           command: |
-            if grep -q $now update.log; then
-              echo "eksctl is already installed"
+            if grep -q $now update.log
               exit 0
             then
               $now >> update.log
