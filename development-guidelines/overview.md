@@ -22,6 +22,8 @@ toc: true
 
 - Each extension/customization should be enframed with condition for checking if the new feature is enabled.
 
+- Added code should be compact (optimized with its size) and implement required business logic with maximum use of existing standard application objects/methods.
+
 - Each customization should be checked with another developer for BP. See [Code review](/development-process/code-review/)
 
 - To run something in batch and if it will not be consumed externally (with web-service calls etc.), it is simplier to implement it using the RunBaseBatch framework rather than SysOperations.
@@ -129,6 +131,35 @@ Sometimes Developers implement solutions that should be reworked from scratch af
               this.processSalesTable(salesTable);
           }
           ttsCommit;
+      }
+  }
+  ```
+  
+- It is not necessary to have additional variable to ogranize parameter or master setup record _caching_. Trust to table-wise or record-wise caching on server side (CacheLookup=Found,EntireTable etc.).
+
+  Example (skip:
+  
+  ```
+  class TutorialSkippingVariables
+  {
+      void run()
+      {
+          SalesTable salesTable;
+          
+          while select salesTable
+          {
+              if (conlen(salesTable.totalWeightAndVolume()) > 0 &&
+                  salesTable
+                  SalesParameters::find().Reservation == ItemReservation::Automatic)
+              {
+                  ttsBegin;
+          
+                  salesTable = InventParameters::find();
+                  salesTable.update();
+                  
+                  ttsCommit;
+              }
+          }
       }
   }
   ```
