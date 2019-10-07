@@ -16,5 +16,11 @@ toc: true
 - Disable Windows Defender (!DO IT ON YOUR OWN RISK!)
 
   [Removing Windows Defender policies (Registry)](http://zakharov.com/development-process/defender-policies-remove.reg)
+  
+## Windows Activation issues
+
+
+
+
 
  
