@@ -86,7 +86,7 @@ Sometimes Developers implement solutions that should be reworked from scratch af
 
 ### Confirmation of irreversible actions
 
-- Before performing all irreversible actions, it is required to ask the user for confirmation in the dialog.</br>By default, the dialog should focus on the button that does not lead to irreversible actions.
+- Before performing all irreversible actions, it is required to ask the user for confirmation in the dialog.<br/>By default, the dialog should focus on the button that does not lead to irreversible actions.
 
 ### Interaction with user
 
