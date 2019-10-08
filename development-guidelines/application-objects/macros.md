@@ -31,7 +31,11 @@ toc: true
   
   Incapsulate logic into a single class for specific feature:
   
-  ![Example from standard application](http://zakharov.com/development-guidelines/application-objects/macro1.png)
+  ![Declaring the public constant](http://zakharov.com/development-guidelines/application-objects/macro1.png)
+  
+  Example of using constants in the code:
+  
+  ![Using of the public constant in the code](http://zakharov.com/development-guidelines/application-objects/macro2.png)
 
 - No excessive macro/constants using in the code
 
