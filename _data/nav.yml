@@ -2,7 +2,7 @@
 - title: Development guidelines
   pages:
     - title: Overview
-    - title: Extending rules
+    - title: Coding standards
     - title: Application objects
       pages:
         - title: Tables
