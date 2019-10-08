@@ -1,29 +1,27 @@
-version: 2
-jobs:
-  build:
-    docker: 
-      - image: circleci/node:4.8.2 # the primary container, where your job's commands are run
-    steps:
-      - checkout # check out the code in the project directory
-      - run: git config --global user.email "ivan@zakharov.com"
-      - run: git config --global user.name "ivanzakharov"
-      - run: rm -rf .git
-      - run: rm -rf .circleci
-      - run: rm -rf *
-      - run: git init
-      - run: git remote add origin git@github.com:ivanzakharov/ivanzakharov.github.io.git
-      - run: git pull origin build
-      - run: git checkout build
-      - run:
-          command: |
-            now=$(date "+%d/%m/%y %H")
-            update=.circleci/update.log
-            echo $now
-            if grep -q "$now" $update; then
-              echo "Skipping update"
-            else
-              echo "$now" >> "$update"
-              git add .
-              git commit -m 'Docs update'
-              git push origin build
-            fi
+workflows:
+  version: 2
+  nightly:
+    triggers:
+      - schedule:
+          cron: "0 0 * * *"
+    jobs:
+      build:
+        docker: 
+          - image: circleci/node:4.8.2 # the primary container, where your job's commands are run
+        steps:
+          - checkout # check out the code in the project directory
+          - run:
+              command: |
+                git config --global user.email "ivan@zakharov.com"
+                git config --global user.name "ivanzakharov"
+                rm -rf .git
+                rm -rf .circleci
+                rm -rf *
+                git remote add origin git@github.com:ivanzakharov/ivanzakharov.github.io.git
+                git init
+                git pull origin build
+                git checkout build
+                date "+%d/%m/%y %H:%M" >> .circleci/update.log
+                git add .
+                git commit -m 'Docs update'
+                git push origin build
