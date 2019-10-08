@@ -11,8 +11,8 @@ jobs:
             rm -rf .git
             rm -rf .circleci
             rm -rf *
-            git remote add origin git@github.com:ivanzakharov/ivanzakharov.github.io.git
             git init
+            git remote add origin git@github.com:ivanzakharov/ivanzakharov.github.io.git
             git pull origin build
             git checkout build
             date "+%d/%m/%y %H:%M" >> .circleci/update.log
@@ -24,7 +24,7 @@ workflows:
   nightly:
     triggers:
       - schedule:
-          cron: "0 * * * *"
+          cron: "10 * * * *"
           filters:
             branches:
               only:
