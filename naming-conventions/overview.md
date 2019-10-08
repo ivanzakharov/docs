@@ -61,7 +61,14 @@ The naming rule is quite simple and straighforward - to use suffixes instead of 
   SecurityPrivileges\InventJournalTableEntityView_PRJ
   ```
 
-- Use special naming for [Jobs](/naming-conventions/application-objects/jobs-runnable-classes/) to find them by Work Item Id.
+- Use [special naming for Jobs](/naming-conventions/application-objects/jobs-runnable-classes/) to find them by Work Item Id.
+
+  Example:
+
+  ```
+  PRJ00153_PurchWorkflowParticipantsUpdate
+  PRJ00087_SalesAgreementUpdate_Customers
+  ```
 
 Detailed naming conventions for [New objects](/naming-conventions/application-objects/new-objects/) and [Extended objects](/naming-conventions/application-objects/extended-objects/). 
 
