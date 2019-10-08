@@ -28,6 +28,10 @@ toc: true
   }
 
   ```
+  
+  Incapsulate logic into a single class for specific feature:
+  
+  ![Example from standart application](http://zakharov.com/development-guidelines/application-objects/macro1.png)
 
 - No excessive macro/constants using in the code
 
