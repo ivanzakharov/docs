@@ -37,3 +37,71 @@ This topic provides general coding principles for Dynamics 365 for Finance & Ope
 - Never use infolog.add directly. Use the indirection methods: error, warning, info and checkFailed.
 
 - Design your application to avoid deadlocks.
+
+
+## X++ Layout
+
+-	Only one statement per line.
+
+-	Break up complex expressions that are more than one line - make it visually clear.
+
+- Do not exceed X++ code line with more than 140 characters, break it up to several lines.
+
+- Use a single blank line to separate entities.
+
+- Do not use parentheses around the _case_ constants. 
+
+- Do not use parentheses around _where_ expressions.
+
+- Add one space between _if_, _switch_, _for_, _while_ and the expressions starting parentheses. 
+
+  Example:
+  
+  ```
+  if (isCreditNote)
+  {
+     ... // do something
+  }
+  ```
+  
+- Add one space after not (!) operator. 
+
+  Example:
+  
+  ```
+  if (! isInvoiced)
+  {
+      while select forupdate salesTable
+         where ! salesTable.ProjId
+      {
+         ... 
+      }
+  }
+  ```
+  
+- Do not use space between function name and starting parentheses.
+
+  Example:
+  
+  ```
+  targetFile.write(wrkStr2);
+  ```
+  
+- Do not use space in function call with empty parameters.
+
+  Example:
+  
+  ```
+  inventTable_ds.reread();
+  ```
+  
+- Use braces around all code blocks, except for around _case_ clauses in a _switch_ statement. Use braces even if there is only one statement in the block.
+
+  Example:
+  
+  ```
+  if (! isProforma)
+  {
+      return;
+  }
+  ```
