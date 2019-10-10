@@ -22,6 +22,45 @@ toc: true
 
 - Each extension/customization should be enframed with condition for checking if the new feature is enabled.
 
+- If it is foreseen to have more than one custom model, each condition checking (using _if_ or _swith_/_case_) should be implemented as separate method that could be extended with Chain-Of-Commands in another model.
+
+  Example (incorrect):
+  
+  ```
+  class SalesFormLetterInvoice_PRJ_Extension
+  {
+      public void printJournal()
+      {
+          ...
+          if (salesParmUpdate.PrintAgreement_PRJ)
+          {
+              ... // do additional printing of agreement with invoice printing
+          }
+      }
+  }
+  ```
+  
+  Example (correct):
+  
+  ```
+  class SalesFormLetterInvoice_PRJ_Extension
+  {
+      protected boolean checkPrintAgreement_PRJ()
+      {
+          return salesParmUpdate.PrintAgreement_PRJ;
+      }
+  
+      public void printJournal()
+      {
+          ...
+          if (this.checkPrintAgreement_PRJ())
+          {
+              ... // do additional printing of agreement with invoice printing
+          }
+      }
+  }
+  ```
+
 - Added code should be compact (optimized with its size) and implement required business logic with maximum use of existing standard application objects/methods.
 
 - Each customization should be checked with another developer for BP. See [Code review](/development-process/code-review/)
