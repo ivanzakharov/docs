@@ -21,7 +21,7 @@ Following extensions are created with <b>.Extension_PRJ</b> suffix:
 - Security Role Extensions
 - Security Duty Extensions
 
-Examples:
+Example:
 
 ```
 BaseEnumExtensions\CaseCategoryGroupType.Extension_PRJ
