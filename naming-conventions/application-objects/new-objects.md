@@ -50,7 +50,7 @@ New objects with following types are created with <b>_PRJ</b> suffix:
 - Services
 - Service Groups
 
-Examples:
+Example:
 
 ```
 BaseEnums\BankClientStreamType_PRJ
