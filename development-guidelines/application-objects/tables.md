@@ -48,7 +48,7 @@ toc: true
   - Add field to table-extention and to have (or to add) the switch, enabling checking for filling the field value.
   - Add check for field validation on validateWrite() with mandatory switch, enabling additional validation.
 
-Examples:
+Example:
 
 ```
 Table Extensions\PurchTable.Extension_PRJ\Fields\VendorReferenceTypeId_PRJ (added)
