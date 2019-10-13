@@ -72,7 +72,7 @@ toc: true
 
 - For the creation of InventJournalTable/InventJournalTrans records InventJournalTableData/InventJournalTransData framework should be used.
 
-- For the creation of LedgerJournalTable/LedgerJournalTrans and related records use LedgerJournalEngine framework. See example in Classes\createLedgerJournalTrans() 
+- For the creation of LedgerJournalTable/LedgerJournalTrans and related records use LedgerJournalEngine framework. See ```Classes\createLedgerJournalTrans()``` 
 
 - Any other records should be created with same way, as user creates it manually:
 
