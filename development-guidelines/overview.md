@@ -67,6 +67,39 @@ toc: true
 
 - To run something in batch and if it will not be consumed externally (with web-service calls etc.), it is simplier to implement it using the RunBaseBatch framework rather than SysOperations.
 
+
+## Records creating
+
+- For the creation of InventJournalTable/InventJournalTrans records InventJournalTableData/InventJournalTransData framework should be used.
+
+- For the creation of LedgerJournalTable/LedgerJournalTrans and related records use LedgerJournalEngine framework. See example in Classes\createLedgerJournalTrans() 
+
+- Any other records should be created with same way, as user creates it manually:
+
+  - initialize record with calling common.initValue() method 
+  
+  - concenquenced filling of the required fields with mandatory executing commong.validateField() and common.modifiedField() method. Consequence of field filling should be described in Functional Specification.
+  
+  - executing of common.validateWrite() and common.write() methods 
+  
+  - all validation errors should be processed properly.
+    
+  Example:
+  
+  ```
+  ...
+  protected void createPurchTable()
+  {
+      PurchTable purchTable;
+      
+      
+  }
+  
+  ...
+  ```
+  
+  - If there is data entity for table which could be used for record inserting, it should be used as preferrable solution.  
+
 ## Reintenting the wheel / Red line crossing
 
 Sometimes Developers implement solutions that should be reworked from scratch after development is finished. To prevent this, following solutions should signal to Technical Architect to do additional task review.
