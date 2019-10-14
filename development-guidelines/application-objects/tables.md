@@ -12,6 +12,8 @@ toc: true
 
 - Always define Primary and Cluster indexes.
 
+- Always define _Table group_ property based on table contents.
+
 ## Fields
 
 - Visible field should always be the part of field group (at least one)
@@ -72,3 +74,17 @@ final class PurchTable_PRJ_Extension (added)
         return ok;
 }
 ```
+
+## Mandatory data entities
+
+For tables with following table groups it is mandatory to create flat data entity with all table fields:
+
+- Group
+- Main
+- Miscellaneous
+- Reference
+- Worksheet
+- Worksheet header
+- Worksheet line
+
+Such data entity should be named with suffix <b>FlatEntity_PRJ</b> 
