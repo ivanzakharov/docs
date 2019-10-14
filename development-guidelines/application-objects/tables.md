@@ -88,3 +88,14 @@ For tables with following table groups it is mandatory to create flat data entit
 - Worksheet line
 
 Such data entity should be named with suffix <b>FlatEntity_PRJ</b> 
+
+Example:
+
+```
+Tables\EcoResProductType_PRJ
+Tables\EcoResProductType_PRJ\Fields\ProductTypeId
+Tables\EcoResProductType_PRJ\Fields\Description
+Tables\EcoRedProductType_PRJ\Fields\DefaultDimension
+
+Data entities\EcoResProductTypeFlatEntity_PRJ
+```
