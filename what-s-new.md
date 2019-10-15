@@ -1,10 +1,10 @@
 ---
 layout: docs
-title: 'What's new'
+title: What's new?
+description:
 group: what-s-new
 toc: true
 ---
-
 
 ## 2019.10.14
 
