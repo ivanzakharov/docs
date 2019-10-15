@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: 'What's new'
-group: whats-new
+group: what-s-new
 toc: true
 ---
 
