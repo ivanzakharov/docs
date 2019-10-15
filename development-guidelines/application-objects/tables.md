@@ -87,7 +87,7 @@ For tables with following table groups it is mandatory to create flat data entit
 - Worksheet header
 - Worksheet line
 
-Such data entity should be named with suffix <b>FlatEntity_PRJ</b> 
+Such data entity should be named with suffix <b>FlatEntity_PRJ</b> and be available in Data Management framework (DataManagementEnabled=Yes) and Excel plug-in via OData (IsPublic=Yes)  
 
 Example:
 
