@@ -1,7 +1,6 @@
 ---
 layout: docs
 title: What's new?
-description:
 group: what-s-new
 toc: true
 ---
