@@ -95,7 +95,7 @@ Example:
 Tables\EcoResProductType_PRJ
 Tables\EcoResProductType_PRJ\Fields\ProductTypeId
 Tables\EcoResProductType_PRJ\Fields\Description
-Tables\EcoRedProductType_PRJ\Fields\DefaultDimension
+Tables\EcoResProductType_PRJ\Fields\DefaultDimension
 
 Data entities\EcoResProductTypeFlatEntity_PRJ
 ```
