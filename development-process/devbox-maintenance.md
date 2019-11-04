@@ -29,11 +29,11 @@ toc: true
 
 - Install or update [d365fo.tools](https://github.com/d365collaborative/d365fo.tools) module, accepting all required packages installing.
  
-  ```Install-Module -Name d365fo.tools```
+  ```Install-Module -Name d365fo.tools -Force```
   
   or
   
-  ```Update-Module -Name d365fo.tools```
+  ```Update-Module -Name d365fo.tools -Force```
 
 - Run creating the runbook on current based on its topology. Put current date into runbook name.
 
