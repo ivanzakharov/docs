@@ -53,10 +53,9 @@ toc: true
   
 - To skip steps, use following:
 
-  ``
+  ```
   AXUpdateInstaller.exe execute -runbookid=Update20191104 -setstepcomplete=1
   ```
-
 
 ## Increasing the performance
 
