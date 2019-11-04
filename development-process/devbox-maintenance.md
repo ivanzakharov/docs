@@ -8,7 +8,7 @@ redirect_from:
 toc: true
 ---
 
-## Updating to latest application or platform release
+## Updating local devbox (VHD) to latest application or platform release
 
 - Download latest update package from LCS
 
@@ -20,38 +20,43 @@ toc: true
   dir C:\Update -Recurse | Unblock-File
   ```
 
-- Run PowerShell as Administrator and change current folder. Further steps should also be executed in the PowerShell.
+- Run Command Prompt as Administrator and change current folder. Further steps should also be executed in the PowerShell.
 
   ```
   C:
   cd C:\Update
   ```
 
-- Install or update [d365fo.tools](https://github.com/d365collaborative/d365fo.tools) module, accepting all required packages installing.
- 
-  ```Install-Module -Name d365fo.tools -Force```
-  
-  or
-  
-  ```Update-Module -Name d365fo.tools -Force```
-
 - Run creating the runbook on current based on its topology. Put current date into runbook name.
 
   ```
-  Invoke-D365SDPInstall -Path "C:\Update" -Command Generate -RunbookId 'Update20191104'
+  AXUpdateInstaller.exe generate -runbookid="Update20191104" -topologyfile="DefaultTopologyData.xml" -servicemodelfile="DefaultServiceModelData.xml" -runbookfile="Update20191104.xml"
   ```
 
 - Import created runbook 
 
   ```
-  Invoke-D365SDPInstall -Path "C:\Update" -Command Import -RunbookId 'Update20191104'
+  AXUpdateInstaller.exe import -runbookfile=Update20191104.xml
   ```
   
-- Execure imported runbook 
+- Execute imported runbook 
 
   ```
-  Invoke-D365SDPInstall -Path "C:\Update" -Command Execute -RunbookId 'Update20191104'
+  AXUpdateInstaller.exe execute -runbookid=Update20191104
   ```
+  
+- To re-run steps use following command if needed:
+
+  ```
+  AXUpdateInstaller.exe execute -runbookid=Update20191104 -rerunstep=1
+  ```
+  
+- To skip steps, use following:
+
+  ``
+  AXUpdateInstaller.exe execute -runbookid=Update20191104 -setstepcomplete=1
+  ```
+
 
 ## Increasing the performance
 
