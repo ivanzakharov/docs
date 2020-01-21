@@ -28,14 +28,14 @@ toc: true
 
 ## Renaming the keys
 
-- New customization should not affect to standard renaming primary key functionality. With adding new fields, that are Foreign Keys, neet to make sure that there is proper relation with Primary Key. 
+- New customization should not affect to standard renaming primary key functionality. With adding new fields, that are Foreign Keys, need to make sure that there is proper relation with Primary Key. 
 
 ## Relations
 
 
 ## Indexes
 
-- Maximum column count in customized index is limited to 3 (three). If more needed, BP Rule exception should be introduced anc checked by Code Reviewer or Technical Architect afterwards. 
+- Maximum column count in customized index is limited to 3 (three). If more needed, BP Rule exception should be introduced and checked by Code Reviewer or Technical Architect afterwards. 
 [TODO - Make BP with limiting index field count](todo.md)
 
 ## Mandatory fields
