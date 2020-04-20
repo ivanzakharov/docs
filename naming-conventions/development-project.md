@@ -21,7 +21,7 @@ _PRJ_ - acronym for current model (see [Model naming](/naming-conventions/model-
 
 _AAAAA_ - task id / work item Id, padded with zeros to the left of 5 characters<br/>
 
-_BBBBBBBBB_ - hort name of the developing feature in [UpperCamelCase](https://techterms.com/definition/camelcase)<br/>
+_BBBBBBBBB_ - short name of the developing feature in [UpperCamelCase](https://techterms.com/definition/camelcase)<br/>
 
 _UUU_ – developer’s nickname\alias in UPPERCASE
 
